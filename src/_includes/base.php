@@ -56,7 +56,7 @@
         <footer class="w3-border-top w3-border-dark-gray">
             <div class="w3-auto w3-padding">
                 <p class="w3-small">Copyright &copy; <a href="<?php echo $site_author_url; ?>" target="_blank" style="text-decoration: none;"><?php echo $site_author; ?>.</a></p>
-                <p class="w3-tiny">Site built and deployed to <a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a> from <a href="https://github.com/DavidHunterScot/StaticPHP-Website" target="_blank">Source Code on GitHub</a>.</p>
+                <p class="w3-tiny">Site built and deployed from <a href="https://github.com/DavidHunterScot/StaticPHP-Website" target="_blank">Source Code on GitHub</a>.</p>
             </div>
         </footer>
     </body>
