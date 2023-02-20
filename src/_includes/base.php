@@ -53,7 +53,7 @@
 
         <?php if( isset( $page_content ) && is_callable( $page_content ) ) $page_content(); ?>
 
-        <footer class="w3-border-top w3-border-dark-gray">
+        <footer class="w3-topbar w3-border-purple w3-deep-purple">
             <div class="w3-auto w3-padding">
                 <p class="w3-small">Copyright &copy; <a href="<?php echo $site_author_url; ?>" target="_blank" style="text-decoration: none;"><?php echo $site_author; ?>.</a></p>
                 <p class="w3-tiny">Site built and deployed from <a href="https://github.com/DavidHunterScot/StaticPHP-Website" target="_blank">Source Code on GitHub</a>.</p>
