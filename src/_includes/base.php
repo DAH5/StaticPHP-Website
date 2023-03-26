@@ -34,6 +34,13 @@
             "text" => "Home",
             "url" => "/",
         );
+        
+        $main_nav_items[] = array
+        (
+            "id" => "getting-started",
+            "text" => "Getting Started",
+            "url" => "/getting-started",
+        );
 
         ?>
 
