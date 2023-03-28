@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title><?php if( isset( $page_title ) && $page_title ) echo $page_title . ' - '; ?><?php echo $site_title; ?><?php if( ! isset( $page_title ) || ! $page_title ) echo ' - ' . $site_tagline; ?></title>
+        <title><?php if( isset( $metadata['page_title'] ) && $metadata['page_title'] ) echo '--- metadata.page_title --- - '; ?><?php echo $site_title; ?><?php if( ! isset( $metadata['page_title'] ) || ! $metadata['page_title'] ) echo ' - ' . $site_tagline; ?></title>
 
         <?php include __DIR__ . DIRECTORY_SEPARATOR . 'stylesheets.php'; ?>
         
@@ -50,7 +50,7 @@
 
                     <?php foreach( $main_nav_items as $main_nav_item ): ?>
                         
-                    <a href="<?php echo $main_nav_item['url']; ?>" class="w3-bar-item w3-button w3-hover-none w3-hover-text-white"><?php if( isset( $current_page ) && $current_page == $main_nav_item['id'] ) echo '<b>' . $main_nav_item['text'] . '</b>'; else echo $main_nav_item['text']; ?></a>
+                    <a href="<?php echo $main_nav_item['url']; ?>" class="w3-bar-item w3-button w3-hover-none w3-hover-text-white"><?php if( isset( $metadata['current_page'] ) && $metadata['current_page'] == $main_nav_item['id'] ) echo '<b>' . $main_nav_item['text'] . '</b>'; else echo $main_nav_item['text']; ?></a>
                     
                     <?php endforeach; ?>
 

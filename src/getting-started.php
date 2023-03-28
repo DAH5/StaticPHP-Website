@@ -1,7 +1,8 @@
+---
+current_page: getting-started
+page_title: Getting Started
+---
 <?php
-
-$current_page = "getting-started";
-$page_title = "Getting Started";
 
 $page_content = function()
 {

@@ -1,6 +1,7 @@
+---
+page_title: Not Found (404)
+---
 <?php
-
-$page_title = "Not Found (404)";
 
 $friendly_urls = false;
 

@@ -1,6 +1,7 @@
+---
+current_page: home
+---
 <?php
-
-$current_page = "home";
 
 $page_content = function()
 {
