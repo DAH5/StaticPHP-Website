@@ -1,9 +1,8 @@
 ---
 page_title: Not Found (404)
+friendly_urls: false
 ---
 <?php
-
-$friendly_urls = false;
 
 $page_content = function()
 {
