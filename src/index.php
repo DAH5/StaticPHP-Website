@@ -9,7 +9,7 @@ $page_content = function()
 
         <section class="w3-padding-32">
             <div class="w3-content w3-padding">
-                <p><img src="/assets/images/StaticPHP-Promo1.png" alt="Static PHP Promo Image"></p>
+                <p><img src="/assets/images/StaticPHP-Promo1.png" alt="Static PHP Promo Image" class="w3-image"></p>
                 <h2>Welcome to StaticPHP!</h2>
                 <p>A simple Static Site Generator (SSG) written in PHP. It turns PHP files into HTML files.</p>
                 <p><a href="https://github.com/DavidHunterScot/StaticPHP" target="_blank">Available on GitHub</a></p>
