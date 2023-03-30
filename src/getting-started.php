@@ -71,16 +71,19 @@ $page_content = function()
 			<li>
 				<p>In your custom PHP file, include the StaticPHP.php file and create a new instance with the build configuration as parameters/arguments.</p>
 
-				<pre>
+				<pre class="w3-code" style="overflow-x: auto;">
+<?php echo strip_tags( highlight_string( "<?php
+
 include __DIR__ . DIRECTORY_SEPARATOR . 'StaticPHP.php';
 
-$path_to_source_files = __DIR__ . DIRECTORY_SEPARATOR . 'SOURCE-FILES';
-$path_to_public_files = __DIR__ . DIRECTORY_SEPARATOR . 'PUBLIC-FILES';
-$paths_to_ignore = array( "IGNORE-FILES" );
-$friendly_urls = true;
+\$path_to_source_files = __DIR__ . DIRECTORY_SEPARATOR . 'SOURCE-FILES';
+\$path_to_public_files = __DIR__ . DIRECTORY_SEPARATOR . 'PUBLIC-FILES';
+\$paths_to_ignore = array( 'IGNORE-FILES' );
+\$friendly_urls = true;
 
-new StaticPHP( $path_to_source_files, $path_to_public_files, $paths_to_ignore, $friendly_urls );
-				</pre>
+new StaticPHP( \$path_to_source_files, \$path_to_public_files, \$paths_to_ignore, \$friendly_urls );
+", true ), '<span>' ); ?>
+</pre>
 			</li>
 			
 			<li>Execute your custom script with the following command php CUSTOM-PHP-SCRIPT.php (where CUSTOM-PHP-SCRIPT is the actual filename of your custom script).</li>
