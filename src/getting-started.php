@@ -1,12 +1,8 @@
 ---
 current_page: getting-started
 page_title: Getting Started
+layout: src/_includes/base.php
 ---
-<?php
-
-$page_content = function()
-{
-?>
 
         <section class="w3-padding-32">
             <div class="w3-content w3-padding">
@@ -93,7 +89,3 @@ new StaticPHP( \$path_to_source_files, \$path_to_public_files, \$paths_to_ignore
             </div>
         </section>
 
-<?php
-};
-
-include __DIR__ . DIRECTORY_SEPARATOR . '_includes' . DIRECTORY_SEPARATOR . 'base.php';

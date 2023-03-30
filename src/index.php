@@ -1,11 +1,8 @@
 ---
 current_page: home
+layout: src/_includes/base.php
 ---
-<?php
 
-$page_content = function()
-{
-?>
 
         <section class="w3-padding-32">
             <div class="w3-content w3-padding">
@@ -31,7 +28,4 @@ $page_content = function()
             </div>
         </section>
 
-<?php
-};
 
-include __DIR__ . DIRECTORY_SEPARATOR . '_includes' . DIRECTORY_SEPARATOR . 'base.php';

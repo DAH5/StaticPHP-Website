@@ -1,4 +1,7 @@
-<?php include __DIR__ . DIRECTORY_SEPARATOR . 'config.php'; ?>
+---
+content_placeholder: {{ content }}
+---
+<?php include 'src/_includes/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,7 +11,7 @@
         
         <title><?php if( isset( $metadata['page_title'] ) && $metadata['page_title'] ) echo '--- metadata.page_title --- - '; ?><?php echo $site_title; ?><?php if( ! isset( $metadata['page_title'] ) || ! $metadata['page_title'] ) echo ' - ' . $site_tagline; ?></title>
 
-        <?php include __DIR__ . DIRECTORY_SEPARATOR . 'stylesheets.php'; ?>
+        <?php include 'src/_includes/stylesheets.php'; ?>
         
     </head>
     
@@ -58,7 +61,7 @@
             </div>
         </nav>
 
-        <?php if( isset( $page_content ) && is_callable( $page_content ) ) $page_content(); ?>
+        {{ content }}
 
         <footer class="w3-topbar w3-border-purple w3-deep-purple">
             <div class="w3-auto w3-padding">
