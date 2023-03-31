@@ -77,8 +77,7 @@ include __DIR__ . DIRECTORY_SEPARATOR . 'StaticPHP.php';
 \$paths_to_ignore = array( 'IGNORE-FILES' );
 \$friendly_urls = true;
 
-new StaticPHP( \$path_to_source_files, \$path_to_public_files, \$paths_to_ignore, \$friendly_urls );
-", true ), '<span>' ); ?>
+new StaticPHP( \$path_to_source_files, \$path_to_public_files, \$paths_to_ignore, \$friendly_urls );", true ), '<span><br>' ); ?>
 </pre>
 			</li>
 			
