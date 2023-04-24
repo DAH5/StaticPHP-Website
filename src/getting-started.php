@@ -27,6 +27,7 @@ layout: src/_includes/base.php
 				<li><code>$path_to_public_files</code> = Set this to the path where you wish your generated output files. A good name for the public files is public but this is up to you.</li>
 				<li><code>$paths_to_ignore</code> = Modify this array to include elements that will form parts of paths you wish to ignore.</li>
 				<li><code>$friendly_urls</code> = Setting friendly URLs to false will turn PHP files into their respective HTML files. Setting friendly URLs to true will turn PHP files into their respective directories with an index.html file inside.</li>
+				<li><code>$metadata_delimiter</code> = This will define the start and end lines of metadata and should be set to something you do not intend to use as metadata itself, such as three hyphens (---).</li>
 			</ul>
 			<li>Execute the StaticPHP Launcher with the following command: <code>php StaticPHP-Launcher.php</code></li>
 			<li>Check the output log for errors and fix them. Remember to re-execute StaticPHP Launcher after each modification of the source files or the output files may not reflect the changes.</li>
@@ -39,7 +40,7 @@ layout: src/_includes/base.php
 			<ul>
 				<li><a href="https://raw.githubusercontent.com/DavidHunterScot/StaticPHP/master/StaticPHP.php" target="_blank">https://raw.githubusercontent.com/DavidHunterScot/StaticPHP/master/StaticPHP.php</a></li>
 			</ul>
-			<li>Execute StaticPHP with the following command <code>php StaticPHP.php PATH_TO_SOURCE_FILES PATH_TO_PUBLIC_FILES PATH_TO_IGNORE FRIENDLY_URLS_TRUE_OR_FALSE</code></li>
+			<li>Execute StaticPHP with the following command <code>php StaticPHP.php PATH_TO_SOURCE_FILES PATH_TO_PUBLIC_FILES PATH_TO_IGNORE FRIENDLY_URLS_TRUE_OR_FALSE METADATA_DELIMITER_TRIPLE_HYPHENS</code></li>
         		<ul>
         			<li>The above command explained:</li>
         			<ul>
@@ -49,6 +50,7 @@ layout: src/_includes/base.php
             				<ul>
             					<li>PATH_TO_IGNORE is treated as a string, and therefore can only contain one element.</li>
 						<li>FRIENDLY_URLS_TRUE_OR_FALSE is treated as a boolean, so only true or false is acceptable, anything else will be treated as false.</li>
+						<li>METADATA_DELIMITER_TRIPLE_HYPHENS relates to what defines the start and end lines of metadata. This should be something you don't intend to use as metadata itself, such as three hyphens (---).</li>
 					</ul>
 				</ul>
 			</ul>
@@ -76,8 +78,9 @@ include __DIR__ . DIRECTORY_SEPARATOR . 'StaticPHP.php';
 \$path_to_public_files = __DIR__ . DIRECTORY_SEPARATOR . 'PUBLIC-FILES';
 \$paths_to_ignore = array( 'IGNORE-FILES' );
 \$friendly_urls = true;
+\$metadata_delimiter = '---';
 
-new StaticPHP( \$path_to_source_files, \$path_to_public_files, \$paths_to_ignore, \$friendly_urls );", true ), '<span><br>' ); ?>
+new StaticPHP( \$path_to_source_files, \$path_to_public_files, \$paths_to_ignore, \$friendly_urls, \$metadata_delimiter );", true ), '<span><br>' ); ?>
 </pre>
 			</li>
 			
