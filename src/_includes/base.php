@@ -44,6 +44,13 @@ content_placeholder: {{ content }}
             "text" => "Getting Started",
             "url" => "/getting-started",
         );
+        
+        $main_nav_items[] = array
+        (
+            "id" => "metadata",
+            "text" => "MetaData",
+            "url" => "/metadata",
+        );
 
         ?>
 
