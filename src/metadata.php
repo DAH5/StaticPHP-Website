@@ -59,7 +59,55 @@ another_key: another value
 		
 		<p><u>Base Layouts</u></p>
 		
-		<p>One problem you may come across when making a website static is having the same base layout across all pages. StaticPHP makes this easy with the metadata key <u>layout</u> being set to the path of where your base layout file is. StaticPHP will merge the current file with the defined layout file for you. It is recommended to store the base layout file inside one of the ignore paths so it does not get processed as an individual file.</p>
+		<p>One problem you may come across with static websites is how to maintain the same base layout across all pages. You could copy and paste the same header and footer into each page, but this can easily get messy and become a headache as the content on your site grows, as you would need to update each page with the changes you wish to make.</p>
+		
+		<p>Another option, which would make this a lot easier, is to use PHP includes, but that would mean all your pages would need to be PHP based, which may not suit your sites needs. As StaticPHP grows in features, alternative file formats may become available, such as Markdown and basic HTML, so PHP would not be a solution in those cases.</p>
+		
+		<p>StaticPHP makes maintaining the same base layout across all pages easy.</p>
+		
+		<p>Simply add the metadata key <u>layout</u> in the source file of the page you wish the base layout applied to with the value being the path to the base layout file.</p>
+		
+<pre class="w3-code" style="overflow-x: auto;">
+---
+page_title: Awesome Page
+<b>layout: SOURCE-FILES/IGNORE-FILES/base-layout.php</b>
+---
+
+&lt;h2&gt;--- metadata.page_title ---&lt;/h2&gt;
+
+&lt;p&gt;This is a very awesome page. I am so glad you checked it out! :)&lt;/p&gt;
+</pre>
+		
+		<p>In the base layout file, add metadata key <u>content_placeholder</u> and set it to what you want to use as a placeholder for your page content. This will be where the content of that specific page will be placed.</p>
+		
+<pre class="w3-code" style="overflow-x: auto;">
+---
+<b>content_placeholder: &#123;&#123; content &#125;&#125;</b>
+---
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en&gt;
+	&lt;head&gt;
+		&lt;meta charset="UTF-8"&gt;
+		&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+		
+		&lt;title&gt;Awesome Website - powered by StaticPHP&lt;/title&gt;
+	&lt;/head&gt;
+	
+	&lt;body&gt;
+		&lt;h1&gt;Awesome Website&lt;/h1&gt;
+		&lt;p&gt;powered by StaticPHP&lt;/p&gt;
+		
+		&lt;hr&gt;
+		
+		<b>&#123;&#123; content &#125;&#125;</b>
+		
+		&lt;hr&gt;
+		
+		&lt;p&gt;Copyright &copy; Awesome Developer.&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre>
             </div>
         </section>
 
