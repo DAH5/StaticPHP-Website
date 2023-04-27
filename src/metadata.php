@@ -73,7 +73,7 @@ page_title: Awesome Page
 <b>layout: SOURCE-FILES/IGNORE-FILES/base-layout.php</b>
 ---
 
-&lt;h2&gt;--- metadata.page_title ---&lt;/h2&gt;
+&lt;h2&gt;&#45;&#45;&#45; metadata.page_title &#45;&#45;&#45;&lt;/h2&gt;
 
 &lt;p&gt;This is a very awesome page. I am so glad you checked it out! :)&lt;/p&gt;
 </pre>
