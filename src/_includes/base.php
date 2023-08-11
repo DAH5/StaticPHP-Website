@@ -1,7 +1,10 @@
 ---
+site_title: StaticPHP
+site_tagline: A Static Site Generator written in PHP. It turns source PHP files into static HTML files.
+site_author: David Hunter
+site_author_url: https://davidhunter.scot
 content_placeholder: {{ content }}
 ---
-<?php include 'src/_includes/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,23 +12,16 @@ content_placeholder: {{ content }}
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title><?php if( isset( $metadata['page_title'] ) && $metadata['page_title'] ) echo '--- metadata.page_title --- - '; ?><?php echo $site_title; ?><?php if( ! isset( $metadata['page_title'] ) || ! $metadata['page_title'] ) echo ' - ' . $site_tagline; ?></title>
+        <title><?php if( isset( $metadata['page_title'] ) && $metadata['page_title'] ) echo '--- metadata.page_title --- - '; ?><?php echo $metadata['site_title']; ?><?php if( ! isset( $metadata['page_title'] ) || ! $metadata['page_title'] ) echo ' - ' . $metadata['site_tagline']; ?></title>
 
-        <?php include 'src/_includes/stylesheets.php'; ?>
-        
+        <link rel="stylesheet" type="text/css" href="https://webfonts.staticly.ict.rocks/poppins/poppins.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
     </head>
     
     <body class="w3-light-gray">
-        <header class="w3-deep-purple w3-padding-32">
-            <div class="w3-auto w3-padding">
-                <div class="w3-row">
-                    <div class="w3-col s6 m3">
-                        <h1 class="w3-hide"><?php echo $site_title; ?></h1>
-                        <span class="w3-xlarge"><a href="/" style="text-decoration: none;"><?php echo $site_title; ?></a></span>
-                        <br>
-                        <span class="w3-tiny">by <a href="<?php echo $site_author_url; ?>" target="_blank" style="text-decoration: none;"><?php echo strtoupper( $site_author ); ?></a></span>
-                    </div>
-                </div>
+        <header>
+            <div class="container">
+                <h1><a href="/">--- metadata.site_title ---</a></h1>
             </div>
         </header>
 
@@ -40,40 +36,40 @@ content_placeholder: {{ content }}
         
         $main_nav_items[] = array
         (
-            "id" => "getting-started",
-            "text" => "Getting Started",
-            "url" => "/getting-started",
+            "id" => "about",
+            "text" => "About",
+            "url" => "/about",
         );
-        
+
         $main_nav_items[] = array
         (
-            "id" => "metadata",
-            "text" => "MetaData",
-            "url" => "/metadata",
+            "id" => "docs",
+            "text" => "Docs",
+            "url" => "https://docs.staticphp.io/",
         );
 
         ?>
 
-        <nav class="w3-purple">
-            <div class="w3-auto">
-                <div class="w3-bar">
-
-                    <?php foreach( $main_nav_items as $main_nav_item ): ?>
-                        
-                    <a href="<?php echo $main_nav_item['url']; ?>" class="w3-bar-item w3-button w3-hover-none w3-hover-text-white"><?php if( isset( $metadata['current_page'] ) && $metadata['current_page'] == $main_nav_item['id'] ) echo '<b>' . $main_nav_item['text'] . '</b>'; else echo $main_nav_item['text']; ?></a>
+        <nav class="main">
+            <div class="container">
+                <?php foreach( $main_nav_items as $main_nav_item ): ?>
                     
-                    <?php endforeach; ?>
-
-                </div>
+                <a href="<?php echo $main_nav_item['url']; ?>"<?php if( isset( $metadata['current_page'] ) && $metadata['current_page'] == $main_nav_item['id'] ) echo ' class="current"'; if( substr( $main_nav_item['url'], 0, 7 ) == "http://" || substr( $main_nav_item['url'], 0, 8 ) == "https://" ) echo ' target="_blank"'; ?>><?php echo $main_nav_item['text']; ?></a>
+                
+                <?php endforeach; ?>
             </div>
         </nav>
 
-        {{ content }}
+        <section class="content">
+            <div class="container">
+                {{ content }}
+            </div>
+        </section>
 
-        <footer class="w3-topbar w3-border-purple w3-deep-purple">
-            <div class="w3-auto w3-padding">
-                <p class="w3-small">Copyright &copy; <a href="<?php echo $site_author_url; ?>" target="_blank" style="text-decoration: none;"><?php echo $site_author; ?>.</a></p>
-                <p class="w3-tiny">Site built and deployed from <a href="https://github.com/DavidHunterScot/StaticPHP-Website" target="_blank">Source Code on GitHub</a>.</p>
+        <footer>
+            <div class="container">
+                <p class="small">Copyright &copy; <a href="<?php echo $metadata['site_author_url']; ?>" target="_blank" style="text-decoration: none;"><?php echo $metadata['site_author']; ?></a>.</p>
+                <p class="tiny">Site built and deployed from <a href="https://github.com/DavidHunterScot/StaticPHP-Website" target="_blank">Source Code on GitHub</a>.</p>
             </div>
         </footer>
     </body>
