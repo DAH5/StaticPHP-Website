@@ -28,6 +28,11 @@ a[ target="_blank" ]:after
     padding-right: 4px;
 }
 
+img
+{
+    max-width: 100%;
+}
+
 .container
 {
     max-width: 1200px;
