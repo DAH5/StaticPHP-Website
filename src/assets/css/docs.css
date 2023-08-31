@@ -1,0 +1,148 @@
+:root
+{
+    --color-background-sidebar: #111111;
+    --color-background-content: #1a1a1a;
+    --color-text: #efefef;
+    --color-line: #666666;
+}
+
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: var( --color-text );
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+a[ target="_blank" ]:after
+{
+    content: "⧉";
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.container
+{
+    display: flex;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+.container > .sidebar
+{
+    flex: 0 0 auto;
+    background-color: var( --color-background-sidebar );
+}
+
+.container > .sidebar a
+{
+    color: var( --color-text );
+    text-decoration: none;
+}
+
+.container > .sidebar h1
+{
+    margin: 0;
+    padding: 2rem;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-color: var( --color-line );
+}
+
+.container > .sidebar nav
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.container > .sidebar nav a
+{
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+}
+
+.container > .sidebar nav a.current
+{
+    font-weight: 600;
+}
+
+.container > .sidebar nav a.current,
+.container > .sidebar nav a:hover
+{
+    background-color: var( --color-background-content );
+}
+
+.container > .content
+{
+    flex: 1 1 auto;
+    background-color: var( --color-background-content );
+    padding: 2rem 4rem;
+    line-height: 1.8;
+}
+
+.container > .content *:first-child
+{
+    margin-top: 0;
+}
+
+.container > .content a
+{
+    color: var( --color-text );
+    font-weight: bold;
+}
+
+.container > .content h2,
+.container > .content h3
+{
+    border-bottom: 1px solid var( --color-line );
+    padding-bottom: 4px;
+}
+
+.container > .content h4,
+.container > .content h5
+{
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-color: var( --color-line );
+}
+
+.container > .content pre
+{
+    padding: 1rem;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.container > .content pre,
+.container > .content code
+{
+    background-color: var( --color-background-sidebar );
+    font-size: 0.8rem;
+    line-height: 1.0;
+    border-radius: 0.5rem;
+}
+
+.container > .content code
+{
+    padding: 0.3rem 0.5rem;
+}
+
+.container > .content .footer
+{
+    color: var( --color-line );
+    font-size: 0.8rem;
+    border-top: 1px solid var( --color-line );
+    padding: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    text-align: center;
+}
+
+.container > .content .footer a
+{
+    color: var( --color-line );
+}

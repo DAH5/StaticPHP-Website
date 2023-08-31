@@ -46,7 +46,7 @@ content_placeholder: {{ content }}
         (
             "id" => "docs",
             "text" => "Docs",
-            "url" => "https://docs.staticphp.ict.rocks/",
+            "url" => "/docs",
         );
 
         ?>
