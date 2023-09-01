@@ -2,7 +2,7 @@
 site_title: StaticPHP
 site_tagline: A Static Site Generator written in PHP. It turns source PHP files into static HTML files.
 site_author: David Hunter
-site_author_url: https://www.davidhunter.ict.rocks/
+site_author_url: https://davidhunter.scot/
 images_url: https://images.storage.ict.rocks
 content_placeholder: {{ content }}
 ---
