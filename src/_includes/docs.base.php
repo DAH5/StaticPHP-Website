@@ -9,7 +9,7 @@ content_placeholder: {{ content }}
 
         <title>--- metadata.title --- - StaticPHP Docs</title>
         
-        <link rel="stylesheet" type="text/css" href="https://webfonts.staticly.ict.rocks/poppins/poppins.css">
+        <link rel="stylesheet" type="text/css" href="https://webfonts.staticly.cc/poppins/poppins.css">
         <link rel="stylesheet" type="text/css" href="/assets/css/docs.css">
     </head>
     <body>
