@@ -9,7 +9,7 @@ content_placeholder: {{ content }}
 
         <title>--- metadata.title --- - StaticPHP Docs</title>
         
-        <link rel="stylesheet" type="text/css" href="https://webfonts.staticly.cc/poppins/poppins.css">
+        <link rel="stylesheet" type="text/css" href="https://staticly.cc/webfonts/poppins/poppins.css">
         <link rel="stylesheet" type="text/css" href="/assets/css/docs.css">
     </head>
     <body>
@@ -67,7 +67,7 @@ content_placeholder: {{ content }}
                 {{ content }}
 
                 <div class="footer">
-                    <p>Site built and deployed using <a href="https://github.com/DavidHunterScot/StaticPHP-Docs" target="_blank">source code on GitHub</a>.</p>
+                    <p>Site built and deployed using <a href="https://github.com/DavidHunterScot/StaticPHP-Website" target="_blank">source code on GitHub</a>.</p>
                     <p><a href="/">StaticPHP Website</a></p>
                 </div>
             </div>
