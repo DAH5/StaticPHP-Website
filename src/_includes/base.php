@@ -13,7 +13,7 @@ content_placeholder: {{ content }}
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title><?php if( isset( $metadata['page_title'] ) && $metadata['page_title'] ) echo '--- metadata.page_title --- - '; ?><?php echo $metadata['site_title']; ?><?php if( ! isset( $metadata['page_title'] ) || ! $metadata['page_title'] ) echo ' - ' . $metadata['site_tagline']; ?></title>
+        <title><?php if( isset( $metadata['page_title'] ) && $metadata['page_title'] ) echo '--- metadata.page_title --- - '; if( isset( $metadata['current_nav_item'], $metadata['docs_nav_item'] ) && $metadata['current_nav_item'] == "docs" ) echo 'Docs - '; ?><?php echo $metadata['site_title']; ?><?php if( ! isset( $metadata['page_title'] ) || ! $metadata['page_title'] ) echo ' - ' . $metadata['site_tagline']; ?></title>
 
         <link rel="stylesheet" type="text/css" href="https://staticly.cc/webfonts/poppins/poppins.css">
         <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
@@ -49,22 +49,75 @@ content_placeholder: {{ content }}
             "url" => "/docs",
         );
 
+        $docs_navitems[] = array
+        (
+            "id" => "getting-started",
+            "url" => "/docs/getting-started",
+            "text" => "Getting Started"
+        );
+
+        $docs_navitems[] = array
+        (
+            "id" => "metadata",
+            "url" => "/docs/metadata",
+            "text" => "MetaData"
+        );
+
+        $docs_navitems[] = array
+        (
+            "id" => "php-files",
+            "url" => "/docs/php-files",
+            "text" => "PHP Files"
+        );
+
+        $docs_navitems[] = array
+        (
+            "id" => "html-files",
+            "url" => "/docs/html-files",
+            "text" => "HTML Files"
+        );
+
+        $docs_navitems[] = array
+        (
+            "id" => "functional-blocks",
+            "url" => "/docs/functional-blocks",
+            "text" => "Functional Blocks"
+        );
+
         ?>
 
         <nav class="main">
             <div class="container">
                 <?php foreach( $main_nav_items as $main_nav_item ): ?>
                     
-                <a href="<?php echo $main_nav_item['url']; ?>"<?php if( isset( $metadata['current_page'] ) && $metadata['current_page'] == $main_nav_item['id'] ) echo ' class="current"'; if( substr( $main_nav_item['url'], 0, 7 ) == "http://" || substr( $main_nav_item['url'], 0, 8 ) == "https://" ) echo ' target="_blank"'; ?>><?php echo $main_nav_item['text']; ?></a>
+                <a href="<?php echo $main_nav_item['url']; ?>"<?php if( isset( $metadata['current_nav_item'] ) && $metadata['current_nav_item'] == $main_nav_item['id'] ) echo ' class="current"'; if( substr( $main_nav_item['url'], 0, 7 ) == "http://" || substr( $main_nav_item['url'], 0, 8 ) == "https://" ) echo ' target="_blank"'; ?>><?php echo $main_nav_item['text']; ?></a>
                 
                 <?php endforeach; ?>
             </div>
         </nav>
 
         <section class="content">
-            <div class="container">
-                {{ content }}
-            </div>
+            <?php if( isset( $metadata['current_nav_item'] ) && $metadata['current_nav_item'] == "docs" ): ?>
+                <div class="container docs">
+                    <div class="sidebar">
+                        <h1><a href="/docs">StaticPHP Docs</a></h1>
+
+                        <nav>
+                            <?php foreach( $docs_navitems as $navitem ): ?>
+                                <a href="<?php echo $navitem['url']; ?>"<?php if( isset( $metadata['docs_nav_item'] ) && $metadata['docs_nav_item'] == $navitem['id'] ) echo ' class="current"'; ?>><?php echo $navitem['text']; ?></a>
+                            <?php endforeach; ?>
+                        </nav>
+                    </div>
+
+                    <div class="content">
+                        {{ content }}
+                    </div>
+                </div>
+            <?php else: ?>
+                <div class="container">
+                    {{ content }}
+                </div>
+            <?php endif; ?>
         </section>
 
         <footer>

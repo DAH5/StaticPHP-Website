@@ -1,6 +1,6 @@
 ---
 page_title: About
-current_page: about
+current_nav_item: about
 layout: src/_includes/base.php
 ---
 
