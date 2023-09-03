@@ -2,6 +2,6 @@
 deployment:
   tasks:
     - php StaticPHP-Launcher.php
-    - export DEPLOYPATH=/home/ebabaccf/sites/staticphp/
+    - export DEPLOYPATH=~/sites/staticphp/
     - /bin/rm -R $DEPLOYPATH/public/*
     - /bin/cp -R public $DEPLOYPATH
