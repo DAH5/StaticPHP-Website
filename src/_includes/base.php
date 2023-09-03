@@ -100,7 +100,7 @@ content_placeholder: {{ content }}
             <?php if( isset( $metadata['current_nav_item'] ) && $metadata['current_nav_item'] == "docs" ): ?>
                 <div class="container docs">
                     <div class="sidebar">
-                        <h1><a href="/docs">StaticPHP Docs</a></h1>
+                        <h1><a href="/docs">Documentation</a></h1>
 
                         <nav>
                             <?php foreach( $docs_navitems as $navitem ): ?>
