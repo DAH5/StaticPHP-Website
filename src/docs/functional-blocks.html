@@ -77,11 +77,11 @@ layout: src/_includes/base.php
 
 <p>The ignore list defined in your build configuration will automatically be applied, but you may wish to have the loop ignore additional items, that is where the <code>ignores</code> parameter comes into play.</p>
 
-<p>Simply define additional items to ignore separated by a semicolon (<code>;</code>).</p>
+<p>Simply define additional items to ignore separated by a semicolon (<code>;</code>). Optionally add spacing to improve readability.</p>
 
 <h5>Example of Ignores</h5>
 
-<pre>--- loop( dir = "src/items", ignores = "ignore-this;ignore-that" ) ---
+<pre>--- loop( dir = "src/items", ignores = "ignore-this; ignore-that" ) ---
 
 &lt;p&gt;&lt;b&gt;Item Name:&lt;/b&gt; --- loop.item-name ---&lt;/p&gt;
 
