@@ -101,6 +101,10 @@ content_placeholder: {{ content }}
                 <div class="container docs">
                     <div class="sidebar">
                         <h1><a href="/docs">Documentation</a></h1>
+                        
+                        <input type="checkbox" class="toggle-checkbox" id="toggle-docs-menu">
+                        
+                        <p class="toggle-docs-menu-btn"><label for="toggle-docs-menu">Toggle Menu</label></p>
 
                         <nav>
                             <?php foreach( $docs_navitems as $navitem ): ?>

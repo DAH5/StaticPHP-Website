@@ -82,6 +82,7 @@ section.content
 {
     min-height: 70vh;
     line-height: 1.8;
+    word-wrap: break-word;
 }
 
 section.content a
@@ -135,13 +136,13 @@ footer .tiny
     align-items: stretch;
     min-height: 70vh;
     padding: 0;
+    flex-direction: column;
 }
 
 .container.docs > .sidebar
 {
     flex: 0 0 auto;
     background-color: var( --color-background-sidebar );
-    max-width: 302px;
 }
 
 .container.docs > .sidebar a
@@ -153,22 +154,22 @@ footer .tiny
 .container.docs > .sidebar h1
 {
     margin: 0;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 1.4rem;
     text-decoration: underline;
     text-underline-offset: 12px;
     text-decoration-color: var( --color-line );
+    text-align: center;
 }
 
 .container.docs > .sidebar nav
 {
-    display: flex;
     flex-direction: column;
 }
 
 .container.docs > .sidebar nav a
 {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     font-size: 0.9rem;
     font-weight: 500;
 }
@@ -187,9 +188,8 @@ footer .tiny
 .container.docs > .content
 {
     flex: 1 1 auto;
-    padding: 2rem 4rem;
     line-height: 1.8;
-    max-width: 970px;
+    padding: 1rem;
 }
 
 .container.docs > .content *:first-child
@@ -247,10 +247,105 @@ footer .tiny
 
 .container.docs .standalone h2
 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .container.docs .standalone p
 {
     font-size: 1.2rem;
+}
+
+.toggle-checkbox
+{
+    display: none;
+}
+
+#toggle-docs-menu ~ nav
+{
+    display: none;
+}
+
+#toggle-docs-menu:checked ~ nav
+{
+    display: flex;
+}
+
+.toggle-docs-menu-btn
+{
+    margin: 0;
+    padding: 0;
+}
+
+.toggle-docs-menu-btn label
+{
+    padding: 0.3rem 1rem;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+#toggle-docs-menu ~ .toggle-docs-menu-btn label
+{
+    background-color: var( --color-background-sidebar );
+}
+
+#toggle-docs-menu:checked ~ .toggle-docs-menu-btn label,
+#toggle-docs-menu ~ .toggle-docs-menu-btn label:hover
+{
+    background-color: var( --color-background-sidebar-alt );
+}
+
+@media ( max-width: 799px )
+{
+    .container.docs > .sidebar h1
+    {
+        padding-bottom: 0;
+    }
+}
+
+@media ( min-width: 800px )
+{
+    .container.docs
+    {
+        flex-direction: row;
+    }
+
+    .container.docs > .sidebar
+    {
+        max-width: 302px;
+    }
+
+    .container.docs > .sidebar h1
+    {
+        text-align: left;
+        padding: 2rem;
+    }
+
+    #toggle-docs-menu ~ nav,
+    #toggle-docs-menu:checked ~ nav
+    {
+        display: flex;
+    }
+
+    .container.docs > .sidebar nav a
+    {
+        padding: 0.5rem 2rem;
+    }
+
+    .container.docs > .content
+    {
+        max-width: 970px;
+        padding: 2rem 4rem;
+    }
+
+    .toggle-docs-menu-btn
+    {
+        display: none;
+    }
+
+    .container.docs .standalone h2
+    {
+        font-size: 3rem;
+    }
 }
