@@ -3,7 +3,8 @@ site_title: StaticPHP
 site_tagline: A Static Site Generator written in PHP. It turns source PHP files into static HTML files.
 site_author: David Hunter
 site_author_url: https://davidhunter.scot/
-images_url: https://images.storage.ict.rocks
+images_url: https://images.staticly.cc
+webfonts_url: https://webfonts.staticly.cc
 content_placeholder: {{ content }}
 ---
 <!DOCTYPE html>
@@ -15,7 +16,7 @@ content_placeholder: {{ content }}
         
         <title><?php if( isset( $metadata['page_title'] ) && $metadata['page_title'] ) echo '--- metadata.page_title --- - '; if( isset( $metadata['current_nav_item'], $metadata['docs_nav_item'] ) && $metadata['current_nav_item'] == "docs" ) echo 'Docs - '; ?><?php echo $metadata['site_title']; ?><?php if( ! isset( $metadata['page_title'] ) || ! $metadata['page_title'] ) echo ' - ' . $metadata['site_tagline']; ?></title>
 
-        <link rel="stylesheet" type="text/css" href="https://staticly.cc/webfonts/poppins/poppins.css">
+        <link rel="stylesheet" type="text/css" href="--- metadata.webfonts_url ---/poppins/poppins.css">
         <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
     </head>
     
