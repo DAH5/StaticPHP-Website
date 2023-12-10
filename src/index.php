@@ -3,7 +3,7 @@ current_nav_item: home
 layout: src/_includes/base.php
 ---
 
-<p><img src="--- metadata.images_url ---/logos/StaticPHP-Promo1.png" alt="Static PHP Promo Image"></p>
+<p><img src="/assets/images/logos/StaticPHP-Promo1.png" alt="Static PHP Promo Image"></p>
 <h2>Welcome to --- metadata.site_title ---!</h2>
 <p>--- metadata.site_tagline ---</p>
 <p><b>NEW:</b> Now supports <a href="/docs/html-files">HTML files</a>!</p>
