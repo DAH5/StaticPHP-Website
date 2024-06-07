@@ -259,6 +259,13 @@ a:hover
     text-decoration: underline;
 }
 
+pre
+{
+    background-color: #eeeeee;
+    padding: 8px;
+    border-radius: 8px;
+}
+
 @media ( min-width: 1px )
 {
     .hero .call2action .button
