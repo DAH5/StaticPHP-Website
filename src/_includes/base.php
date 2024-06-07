@@ -1,6 +1,6 @@
 ---
 site_title: StaticPHP
-site_tagline: A Static Site Generator written in PHP. It turns source PHP files into static HTML files.
+site_tagline: Fast and Simple Static Site Generator
 site_author: David Hunter
 site_author_url: https://davidhunter.echoverse.cc/
 content_placeholder: {{ content }}
@@ -9,125 +9,53 @@ content_placeholder: {{ content }}
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title><?php if( isset( $metadata['page_title'] ) && $metadata['page_title'] ) echo '--- metadata.page_title --- - '; if( isset( $metadata['current_nav_item'], $metadata['docs_nav_item'] ) && $metadata['current_nav_item'] == "docs" ) echo 'Docs - '; ?><?php echo $metadata['site_title']; ?><?php if( ! isset( $metadata['page_title'] ) || ! $metadata['page_title'] ) echo ' - ' . $metadata['site_tagline']; ?></title>
+        <title><?php if( isset( $metadata[ 'page_title' ] ) && $metadata[ 'page_title' ] ) echo $metadata[ 'page_title' ] . ' - '; ?>--- metadata.site_title --- - --- metadata.site_tagline ---</title>
 
-        <link rel="stylesheet" type="text/css" href="/assets/webfonts/poppins/poppins.css">
         <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
     </head>
-    
-    <body class="w3-light-gray">
-        <header>
+
+    <body>
+        <div class="header">
             <div class="container">
-                <h1><a href="/">--- metadata.site_title ---</a></h1>
-            </div>
-        </header>
-
-        <?php
-
-        $main_nav_items[] = array
-        (
-            "id" => "home",
-            "text" => "Home",
-            "url" => "/",
-        );
-        
-        $main_nav_items[] = array
-        (
-            "id" => "about",
-            "text" => "About",
-            "url" => "/about",
-        );
-
-        $main_nav_items[] = array
-        (
-            "id" => "docs",
-            "text" => "Docs",
-            "url" => "/docs",
-        );
-
-        $docs_navitems[] = array
-        (
-            "id" => "getting-started",
-            "url" => "/docs/getting-started",
-            "text" => "Getting Started"
-        );
-
-        $docs_navitems[] = array
-        (
-            "id" => "metadata",
-            "url" => "/docs/metadata",
-            "text" => "MetaData"
-        );
-
-        $docs_navitems[] = array
-        (
-            "id" => "php-files",
-            "url" => "/docs/php-files",
-            "text" => "PHP Files"
-        );
-
-        $docs_navitems[] = array
-        (
-            "id" => "html-files",
-            "url" => "/docs/html-files",
-            "text" => "HTML Files"
-        );
-
-        $docs_navitems[] = array
-        (
-            "id" => "functional-blocks",
-            "url" => "/docs/functional-blocks",
-            "text" => "Functional Blocks"
-        );
-
-        ?>
-
-        <nav class="main">
-            <div class="container">
-                <?php foreach( $main_nav_items as $main_nav_item ): ?>
-                    
-                <a href="<?php echo $main_nav_item['url']; ?>"<?php if( isset( $metadata['current_nav_item'] ) && $metadata['current_nav_item'] == $main_nav_item['id'] ) echo ' class="current"'; if( substr( $main_nav_item['url'], 0, 7 ) == "http://" || substr( $main_nav_item['url'], 0, 8 ) == "https://" ) echo ' target="_blank"'; ?>><?php echo $main_nav_item['text']; ?></a>
-                
-                <?php endforeach; ?>
-            </div>
-        </nav>
-
-        <section class="content">
-            <?php if( isset( $metadata['current_nav_item'] ) && $metadata['current_nav_item'] == "docs" ): ?>
-                <div class="container docs">
-                    <div class="sidebar">
-                        <h1><a href="/docs">Documentation</a></h1>
-                        
-                        <input type="checkbox" class="toggle-checkbox" id="toggle-docs-menu">
-                        
-                        <p class="toggle-docs-menu-btn"><label for="toggle-docs-menu">Toggle Menu</label></p>
-
-                        <nav>
-                            <?php foreach( $docs_navitems as $navitem ): ?>
-                                <a href="<?php echo $navitem['url']; ?>"<?php if( isset( $metadata['docs_nav_item'] ) && $metadata['docs_nav_item'] == $navitem['id'] ) echo ' class="current"'; ?>><?php echo $navitem['text']; ?></a>
-                            <?php endforeach; ?>
-                        </nav>
-                    </div>
-
-                    <div class="content">
-                        {{ content }}
-                    </div>
+                <div class="logo">
+                    <h1><a href="/">--- metadata.site_title ---</a></h1>
                 </div>
-            <?php else: ?>
+
+                <ul class="navbar">
+                    <li><a href="/"<?php if( isset( $metadata[ 'current_nav_item' ] ) && $metadata[ 'current_nav_item' ] == 'home' ) echo ' class="current"'; ?>>Home</a></li>
+                    <li><a href="/features"<?php if( isset( $metadata[ 'current_nav_item' ] ) && $metadata[ 'current_nav_item' ] == 'features' ) echo ' class="current"'; ?>>Features</a></li>
+                    <li><a href="/docs"<?php if( isset( $metadata[ 'current_nav_item' ] ) && $metadata[ 'current_nav_item' ] == 'docs' ) echo ' class="current"'; ?>>Docs</a></li>
+                    <li><a href="/download"<?php if( isset( $metadata[ 'current_nav_item' ] ) && $metadata[ 'current_nav_item' ] == 'download' ) echo ' class="current"'; ?>>Download</a></li>
+                </ul>
+
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+
+        <?php if( isset( $metadata[ 'current_nav_item' ] ) && $metadata[ 'current_nav_item' ] == 'docs' ): ?>
+            <div class="docs-nav">
                 <div class="container">
-                    {{ content }}
-                </div>
-            <?php endif; ?>
-        </section>
+                    <ul>
+                        <li><a href="/docs/getting-started"<?php if( isset( $metadata[ 'docs_nav_item' ] ) && $metadata[ 'docs_nav_item' ] == 'getting-started' ) echo ' class="current"'; ?>>Getting Started</a></li>
+                        <li><a href="/docs/metadata"<?php if( isset( $metadata[ 'docs_nav_item' ] ) && $metadata[ 'docs_nav_item' ] == 'metadata' ) echo ' class="current"'; ?>>MetaData</a></li>
+                        <li><a href="/docs/functional-blocks"<?php if( isset( $metadata[ 'docs_nav_item' ] ) && $metadata[ 'docs_nav_item' ] == 'functional-blocks' ) echo ' class="current"'; ?>>Functional Blocks</a></li>
+                        <li><a href="/docs/html-files"<?php if( isset( $metadata[ 'docs_nav_item' ] ) && $metadata[ 'docs_nav_item' ] == 'html-files' ) echo ' class="current"'; ?>>HTML Files</a></li>
+                        <li><a href="/docs/php-files"<?php if( isset( $metadata[ 'docs_nav_item' ] ) && $metadata[ 'docs_nav_item' ] == 'php-files' ) echo ' class="current"'; ?>>PHP Files</a></li>
 
-        <footer>
-            <div class="container">
-                <p class="small">Copyright &copy; <a href="<?php echo $metadata['site_author_url']; ?>" target="_blank" style="text-decoration: none;"><?php echo $metadata['site_author']; ?></a>.</p>
-                <p class="tiny">Site built and deployed from <a href="https://github.com/DavidHunterScot/StaticPHP-Website" target="_blank">Source Code on GitHub</a>.</p>
+                        <div class="clearfloat"></div>
+                    </ul>
+                </div>
             </div>
-        </footer>
+        <?php endif; ?>
+
+        {{ content }}
+
+        <div class="footer">
+            <div class="container">
+                <p>Copyright &copy; <a href="--- metadata.site_author_url ---">--- metadata.site_author ---</a>.</p>
+            </div>
+        </div>
     </body>
 </html>

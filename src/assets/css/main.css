@@ -5,347 +5,282 @@
     box-sizing: border-box;
 }
 
-:root
-{
-    --color-theme-primary: #7A86B8;
-    --color-theme-primary-alt: #4F5B93;
-    --color-theme-secondary: #E44D26;
-    --color-background-sidebar: #ccc;
-    --color-background-sidebar-alt: #bbb;
-    --color-background-code: #ccc;
-    --color-line: #666666;
-}
-
 html,
 body
 {
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    background-color: #e0e0e0;
-}
-
-a[ target="_blank" ]:after
-{
-    content: "⧉";
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-img
-{
-    max-width: 100%;
+    font-family: system-ui, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .container
 {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
+    margin: auto;
+    padding: 16px;
 }
 
-header
+a
 {
-    background-color: var( --color-theme-primary );
-}
-
-header h1 a
-{
-    text-decoration: none;
-    color: white;
-}
-
-nav.main
-{
-    background-color: var( --color-theme-primary-alt );
-}
-
-nav.main .container
-{
-    display: flex;
-    gap: 1rem;
-}
-
-nav.main a
-{
-    color: white;
-    text-decoration: none;
-}
-
-nav.main a.current
-{
+    color: #4F5B93;
     font-weight: bold;
 }
 
-section.content
+a:hover
 {
-    min-height: 70vh;
-    line-height: 1.8;
-    word-wrap: break-word;
+    color: #7A86B8;
 }
 
-section.content a
+.header
 {
-    color: var( --color-theme-primary-alt );
-    font-weight: bold;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
-}
-
-section.content a:hover
-{
-    color: var( --color-theme-secondary );
-}
-
-section.content code
-{
-    padding: 2px 4px;
-    border-radius: 4px;
-    background-color: #c9c9c9;
-    font-size: 0.8rem;
-}
-
-footer
-{
-    background-color: var( --color-theme-primary );
-    color: #ffffff;
-    border-top: 8px solid var( --color-theme-primary-alt );
-}
-
-footer a
-{
+    background-color: #4F5B93;
+    border-bottom: 6px solid #7A86B8;
     color: #ffffff;
 }
 
-footer .small
+.header a
 {
-    font-size: 0.8rem;
-}
-
-footer .tiny
-{
-    font-size: 0.7rem;
-}
-
-/* Docs Styles */
-
-.container.docs
-{
-    display: flex;
-    align-items: stretch;
-    min-height: 70vh;
-    padding: 0;
-    flex-direction: column;
-}
-
-.container.docs > .sidebar
-{
-    flex: 0 0 auto;
-    background-color: var( --color-background-sidebar );
-}
-
-.container.docs > .sidebar a
-{
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
 }
 
-.container.docs > .sidebar h1
+.header .logo
 {
-    margin: 0;
-    padding: 1rem;
-    font-size: 1.4rem;
+    float: left;
+}
+
+.header .logo h1
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header .navbar
+{
+    float: right;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    padding-top: 8px;
+}
+
+.header .navbar li
+{
+    display: inline;
+    padding-left: 16px;
+}
+
+.header .navbar a:hover,
+.header .navbar a.current
+{
     text-decoration: underline;
-    text-underline-offset: 12px;
-    text-decoration-color: var( --color-line );
+}
+
+.clearfloat
+{
+    float: none;
+    clear: both;
+}
+
+.hero
+{
+    background-color: #eeeeee;
+    padding-top: 32px;
+    padding-bottom: 96px;
     text-align: center;
 }
 
-.container.docs > .sidebar nav
+.hero h2
 {
-    flex-direction: column;
+    font-size: 32px;
 }
 
-.container.docs > .sidebar nav a
+.hero p
 {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 24px;
+    font-style: italic;
 }
 
-.container.docs > .sidebar nav a.current
+.hero .call2action
 {
-    font-weight: 700;
+    padding-top: 32px;
 }
 
-.container.docs > .sidebar nav a.current,
-.container.docs > .sidebar nav a:hover
+.hero .call2action .button
 {
-    background-color: var( --color-background-sidebar-alt );
+    padding: 16px 24px;
+    border-radius: 16px;
+    border: 3px solid #7A86B8;
+    color: #7A86B8;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
 }
 
-.container.docs > .content
+.hero .call2action .button:hover
 {
-    flex: 1 1 auto;
-    line-height: 1.8;
-    padding: 1rem;
+    border-color: #4F5B93;
+    color: #4F5B93;
 }
 
-.container.docs > .content *:first-child
-{
-    margin-top: 0;
-}
-
-.container.docs > .content a
+.hero .call2action .button.highlight
 {
     font-weight: bold;
 }
 
-.container.docs > .content h2,
-.container.docs > .content h3
+.features
 {
-    border-bottom: 1px solid var( --color-line );
-    padding-bottom: 4px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
 }
 
-.container.docs > .content h4,
-.container.docs > .content h5
+.features h3
+{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.features .feature h4
+{
+    font-size: 24px;
+}
+
+.features .feature
+{
+    font-size: 18px;
+}
+
+.key-features
+{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+}
+
+.key-features h3
+{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.key-features .feature h4
+{
+    font-size: 24px;
+}
+
+.key-features .feature,
+.features .feature,
+.howitworks .step
+{
+    width: 33%;
+    display: inline;
+    padding: 16px;
+    vertical-align: top;
+}
+
+.key-features .feature
+{
+    font-size: 18px;
+}
+
+.howitworks
+{
+    background-color: #eeeeee;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+}
+
+.howitworks h3
+{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.howitworks .step h4
+{
+    font-size: 24px;
+}
+
+.howitworks .step
+{
+    font-size: 18px;
+}
+
+.footer
+{
+    font-size: 12px;
+}
+
+.docs-nav
+{
+    font-size: 16px;
+    background-color: #7A86B8;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: -6px;
+}
+    
+.docs-nav ul
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.docs-nav .container
+{
+    padding: 0px;
+}
+
+.docs-nav li
+{
+    float: left;
+}
+
+.docs-nav a
+{
+    color: #ffffff;
+    padding: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.docs-nav a.current
+{
+    font-weight: bold;
+}
+
+.docs-nav a:hover
 {
     text-decoration: underline;
-    text-underline-offset: 12px;
-    text-decoration-color: var( --color-line );
 }
 
-.container.docs > .content pre
+@media ( min-width: 1px )
 {
-    padding: 1rem;
-    overflow-x: auto;
-    max-width: 100%;
-}
-
-.container.docs > .content pre,
-.container.docs > .content code
-{
-    background-color: var( --color-background-code );
-    font-size: 1rem;
-    line-height: 0.9;
-    border-radius: 0.5rem;
-    font-family: monospace;
-}
-
-.container.docs > .content code
-{
-    padding: 0.3rem 0.5rem;
-}
-
-.container.docs .standalone
-{
-    padding: 5vh 5vw;
-    text-align: center;
-}
-
-.container.docs .standalone h2
-{
-    font-size: 2rem;
-}
-
-.container.docs .standalone p
-{
-    font-size: 1.2rem;
-}
-
-.toggle-checkbox
-{
-    display: none;
-}
-
-#toggle-docs-menu ~ nav
-{
-    display: none;
-}
-
-#toggle-docs-menu:checked ~ nav
-{
-    display: flex;
-}
-
-.toggle-docs-menu-btn
-{
-    margin: 0;
-    padding: 0;
-}
-
-.toggle-docs-menu-btn label
-{
-    padding: 0.3rem 1rem;
-    display: block;
-    text-align: center;
-    cursor: pointer;
-    font-size: 0.8rem;
-}
-
-#toggle-docs-menu ~ .toggle-docs-menu-btn label
-{
-    background-color: var( --color-background-sidebar );
-}
-
-#toggle-docs-menu:checked ~ .toggle-docs-menu-btn label,
-#toggle-docs-menu ~ .toggle-docs-menu-btn label:hover
-{
-    background-color: var( --color-background-sidebar-alt );
-}
-
-@media ( max-width: 799px )
-{
-    .container.docs > .sidebar h1
+    .hero .call2action .button
     {
-        padding-bottom: 0;
-    }
-}
-
-@media ( min-width: 800px )
-{
-    .container.docs
-    {
-        flex-direction: row;
+        font-weight: bold;
     }
 
-    .container.docs > .sidebar
+    .hero .call2action .button.highlight
     {
-        max-width: 302px;
+        background-color: #7A86B8;
+        color: #ffffff;
     }
 
-    .container.docs > .sidebar h1
+    .hero .call2action .button.highlight:hover
     {
-        text-align: left;
-        padding: 2rem;
+        background-color: #4F5B93;
     }
 
-    #toggle-docs-menu ~ nav,
-    #toggle-docs-menu:checked ~ nav
+    .key-features .feature,
+    .features .feature,
+    .howitworks .step
     {
-        display: flex;
-    }
-
-    .container.docs > .sidebar nav a
-    {
-        padding: 0.5rem 2rem;
-    }
-
-    .container.docs > .content
-    {
-        max-width: 970px;
-        padding: 2rem 4rem;
-    }
-
-    .toggle-docs-menu-btn
-    {
-        display: none;
-    }
-
-    .container.docs .standalone h2
-    {
-        font-size: 3rem;
+        display: inline-block;
     }
 }
