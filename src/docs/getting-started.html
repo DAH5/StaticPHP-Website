@@ -30,7 +30,7 @@ layout: src/_includes/base.php
 
 	<p>If using the launcher, simply run the following command:</p>
 
-	<code>php StaticPHP-Launcher.php</code>
+	<pre>php StaticPHP-Launcher.php</pre>
 
 	<p>For those using the StaticPHP file itself, there are two options:</p>
 
@@ -40,31 +40,31 @@ layout: src/_includes/base.php
 
 	<p>Open a terminal in your project directory/folder, and type the following command, adjusting the parameters to suit your project:</p>
 
-	<code>php StaticPHP.php PATH_TO_INPUT_FILES_DIR PATH_TO_OUTPUT_FILES_DIR PATH_PART_TO_IGNORE FRIENDLY_URLS_BOOL METADATA_DELIMITER MINIFY_HTML_BOOL MINIFY_CSS_BOOL MINIFY_JS_BOOL</code>
+	<pre>php StaticPHP.php PATH_TO_INPUT_FILES_DIR PATH_TO_OUTPUT_FILES_DIR PATH_PART_TO_IGNORE FRIENDLY_URLS_BOOL METADATA_DELIMITER MINIFY_HTML_BOOL MINIFY_CSS_BOOL MINIFY_JS_BOOL</pre>
 
 	<ul>
-		<li>PATH_TO_INPUT_FILES_DIR: The path relative to StaticPHP that contains your source input files.</li>
+		<li><code>PATH_TO_INPUT_FILES_DIR</code>: The path relative to StaticPHP that contains your source input files.</li>
 		
-		<li>PATH_TO_OUTPUT_FILES_DIR: The path relative to StaticPHP that contains your generated output files.</li>
+		<li><code>PATH_TO_OUTPUT_FILES_DIR</code>: The path relative to StaticPHP that contains your generated output files.</li>
 		
-		<li>PATH_PART_TO_IGNORE: Any string of text in file paths that StaticPHP should ignore as individual files. Useful for PHP includes that you don't want to output.</li>
+		<li><code>PATH_PART_TO_IGNORE</code>: Any string of text in file paths that StaticPHP should ignore as individual files. Useful for PHP includes that you don't want to output.</li>
 		
-		<li>FRIENDLY_URLS_BOOL: A boolean (true/false) indicating whether StaticPHP should create friendly URLs (e.g., domain.tld/page) or keep the paths the same as the source (e.g., domain.tld/page.html).</li>
+		<li><code>FRIENDLY_URLS_BOOL</code>: A boolean (true/false) indicating whether StaticPHP should create friendly URLs (e.g., domain.tld/page) or keep the paths the same as the source (e.g., domain.tld/page.html).</li>
 		
-		<li>METADATA_DELIMITER: A delimiter indicating where Metadata starts and ends. See the Metadata page for more details.</li>
+		<li><code>METADATA_DELIMITER</code>: A delimiter indicating where Metadata starts and ends. See the Metadata page for more details.</li>
 		
-		<li>MINIFY_HTML_BOOL: A boolean indicating whether StaticPHP should minify HTML files. This affects only the output files; source files remain unminified.</li>
+		<li><code>MINIFY_HTML_BOOL</code>: A boolean indicating whether StaticPHP should minify HTML files. This affects only the output files; source files remain unminified.</li>
 		
-		<li>MINIFY_CSS_BOOL: A boolean indicating whether StaticPHP should minify CSS files. This affects only the output files; source files remain unminified.</li>
+		<li><code>MINIFY_CSS_BOOL</code>: A boolean indicating whether StaticPHP should minify CSS files. This affects only the output files; source files remain unminified.</li>
 		
-		<li>MINIFY_JS_BOOL: A boolean indicating whether StaticPHP should minify JavaScript files. This affects only the output files; source files remain unminified.</li>
+		<li><code>MINIFY_JS_BOOL</code>: A boolean indicating whether StaticPHP should minify JavaScript files. This affects only the output files; source files remain unminified.</li>
 	</ul>
 
 	<h4>Using a Custom Launcher Script</h4>
 
 	<p>You can create a custom launcher script for more flexibility. Here is an example:</p>
 
-	<code>
+	<pre>
 &lt;?php<br>
 <br>
 $path_to_input_files_dir = __DIR__ . DIRECTORY_SEPARATOR . 'src';<br>
@@ -89,7 +89,7 @@ new StaticPHP<br>
 &nbsp;&nbsp;&nbsp;&nbsp;$minify_css_bool,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;$minify_js_bool<br>
 );<br>
-	</code>
+	</pre>
 
 	<p>By following these steps, you can get started with StaticPHP and easily build and deploy your static websites. For more detailed information, refer to the accompanying documentation and guides.</p>
 </div>
