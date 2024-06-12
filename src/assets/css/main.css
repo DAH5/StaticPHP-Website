@@ -269,6 +269,11 @@ code
     overflow-x: auto;
 }
 
+.dropdown .button
+{
+    display: none;
+}
+
 @media ( min-width: 1px )
 {
     .hero .call2action .button
@@ -292,5 +297,68 @@ code
     .howitworks .step
     {
         display: inline-block;
+    }
+}
+
+@media ( max-width: 800px )
+{
+    .header .logo,
+    .header .navbar
+    {
+        float: none;
+        text-align: center;
+    }
+
+    .dropdown
+    {
+        position: static;
+    }
+
+    .dropdown:hover .button ~ .content
+    {
+        display: block;
+    }
+
+    .dropdown .button
+    {
+        user-select: none;
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .dropdown:hover .button
+    {
+        text-decoration: none;
+        background-color: #4F5B93;
+    }
+
+    .dropdown .content
+    {
+        display: none;
+    }
+
+    .docs-nav
+    {
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .docs-nav li
+    {
+        float: none;
+        display: block;
+    }
+
+    .docs-nav a
+    {
+        line-height: 1.5;
+        display: block;
+    }
+
+    .docs-nav a:hover
+    {
+        background-color: #4F5B93;
     }
 }
