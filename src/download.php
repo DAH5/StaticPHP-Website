@@ -16,7 +16,7 @@ layout: src/_includes/base.php
         <p>The StaticPHP Launcher makes it easy to save your build configuration and stay up to date with the latest developments in StaticPHP.</p>
 
         <div class="call2action">
-            <a href="http://raw.githubusercontent.com/DavidHunterScot/StaticPHP/master/StaticPHP-Launcher.php" target="_blank" class="button highlight">StaticPHP-Launcher.php on GitHub</a>
+            <a href="http://raw.githubusercontent.com/StaticPHP/StaticPHP/master/StaticPHP-Launcher.php" target="_blank" class="button highlight">StaticPHP-Launcher.php on GitHub</a>
             &nbsp;&nbsp;&nbsp;&nbsp;
             <a href="http://gitlab.com/StaticPHP/StaticPHP/-/raw/master/StaticPHP-Launcher.php" target="_blank" class="button">StaticPHP-Launcher.php on GitLab</a>
         </div>
