@@ -25,7 +25,7 @@ layout: src/_includes/base.php
 
         <div class="feature">
             <h4>Flexible and Powerful</h4>
-            <p>Extensive <a href="#docs.staticphp.io/customisation">customisation options</a> to fit your needs.</p>
+            <p>Extensive <a href="/docs/customisation">customisation options</a> to fit your needs.</p>
         </div>
 
         <div class="feature">

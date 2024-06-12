@@ -41,6 +41,7 @@ content_placeholder: {{ content }}
                         <li><a href="/docs/getting-started"<?php if( isset( $metadata[ 'docs_nav_item' ] ) && $metadata[ 'docs_nav_item' ] == 'getting-started' ) echo ' class="current"'; ?>>Getting Started</a></li>
                         <li><a href="/docs/metadata"<?php if( isset( $metadata[ 'docs_nav_item' ] ) && $metadata[ 'docs_nav_item' ] == 'metadata' ) echo ' class="current"'; ?>>MetaData</a></li>
                         <li><a href="/docs/functional-blocks"<?php if( isset( $metadata[ 'docs_nav_item' ] ) && $metadata[ 'docs_nav_item' ] == 'functional-blocks' ) echo ' class="current"'; ?>>Functional Blocks</a></li>
+                        <li><a href="/docs/customisation"<?php if( isset( $metadata[ 'docs_nav_item' ] ) && $metadata[ 'docs_nav_item' ] == 'customisation' ) echo ' class="current"'; ?>>Customisation</a></li>
                         <li><a href="/docs/html-files"<?php if( isset( $metadata[ 'docs_nav_item' ] ) && $metadata[ 'docs_nav_item' ] == 'html-files' ) echo ' class="current"'; ?>>HTML Files</a></li>
                         <li><a href="/docs/php-files"<?php if( isset( $metadata[ 'docs_nav_item' ] ) && $metadata[ 'docs_nav_item' ] == 'php-files' ) echo ' class="current"'; ?>>PHP Files</a></li>
 
