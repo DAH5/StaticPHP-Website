@@ -2,7 +2,7 @@
 site_title: StaticPHP
 site_tagline: Fast and Simple Static Site Generator
 site_author: David Hunter
-site_author_url: https://davidhunter.echoverse.cc/
+site_author_url: https://www.dah5.me.uk/davidhunter/
 content_placeholder: {{ content }}
 ---
 <!DOCTYPE html>
