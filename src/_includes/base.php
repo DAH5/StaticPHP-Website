@@ -59,7 +59,7 @@ content_placeholder: {{ content }}
 
         <div class="footer">
             <div class="container">
-                <p>Copyright &copy; <a href="--- metadata.site_author_url ---">--- metadata.site_author ---</a>. StaticPHP is available on <a href="http://github.com/StaticPHP" target="_blank">GitHub</a> and <a href="http://gitlab.com/StaticPHP" target="_blank">GitLab</a>.</p>
+                <p>Copyright &copy; <a href="--- metadata.site_author_url ---" target="_blank">--- metadata.site_author ---</a>. StaticPHP is available on <a href="http://github.com/StaticPHP" target="_blank">GitHub</a> and <a href="http://gitlab.com/StaticPHP" target="_blank">GitLab</a>.</p>
             </div>
         </div>
     </body>
