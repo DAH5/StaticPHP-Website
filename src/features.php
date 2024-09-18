@@ -30,17 +30,17 @@ layout: src/_includes/base.php
 
         <div class="feature">
             <h4>SEO Friendly URLs</h4>
-            <p><a href="#docs.staticphp.io/friendly-urls">Optimize for Search Engines</a> and have URLs like <code>website.tld/page</code>.</p>
+            <p>Optimize for Search Engines and have URLs like <code>website.tld/page</code>.</p>
         </div>
 
         <div class="feature">
             <h4>MetaData</h4>
-            <p>Similar to variables, MetaData is <code>key: value</code> pairs of information, which can be used to customise what StaticPHP does for that page.</p>
+            <p>Similar to variables, <a href="/docs/metadata">MetaData</a> is <code>key: value</code> pairs of information, which can be used to customise what StaticPHP does for that page.</p>
         </div>
 
         <div class="feature">
             <h4>Functional Blocks</h4>
-            <p>Functional blocks such as loop blocks can be used to perform certain functions on the page, such as iterate through a list and display information.</p>
+            <p><a href="/docs/functional-blocks">Functional Blocks</a> such as loop blocks can be used to perform certain functions on the page, such as iterate through a list and display information.</p>
         </div>
     </div>
 </div>

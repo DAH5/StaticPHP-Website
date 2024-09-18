@@ -37,7 +37,7 @@ layout: src/_includes/base.php
 
         <div class="feature">
             <h4>SEO Friendly URLs</h4>
-            <p><a href="/docs/friendly-urls">Optimize for Search Engines</a> and have URLs like <code>website.tld/page</code>.</p>
+            <p>Optimize for Search Engines and have URLs like <code>website.tld/page</code>.</p>
         </div>
     </div>
 </div>
