@@ -4,6 +4,6 @@ ErrorDocument 404 /404.html
 	RewriteEngine on
 	
 	RewriteCond %{SERVER_PORT} ^80$ [OR]
-	RewriteCond %{HTTP_HOST} !^staticphp.softwayr.io$
-	RewriteRule ^(.*)$ https://staticphp.softwayr.io/$1 [R=307,END]
+	RewriteCond %{HTTP_HOST} !^staticphp.softwayr.net$
+	RewriteRule ^(.*)$ https://staticphp.softwayr.net/$1 [R=307,END]
 </IfModule>
