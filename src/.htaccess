@@ -3,7 +3,5 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
 	RewriteEngine on
 	
-	RewriteCond %{SERVER_PORT} ^80$ [OR]
-	RewriteCond %{HTTP_HOST} !^staticphp.softwayr.net$
-	RewriteRule ^(.*)$ https://staticphp.softwayr.net/$1 [R=307,END]
+	RewriteRule ^(.*)$ https://www.dah5.me.uk/staticphp/$1 [R=307,END]
 </IfModule>
