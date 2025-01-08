@@ -1,9 +1,10 @@
 ---
+layout: src/_includes/docs-layout.php
 page_title: PHP Files
-current_nav_item: docs
 docs_nav_item: php-files
-layout: src/_includes/base.php
 ---
+
+<h2>PHP Files</h2>
 
 <p>Create a PHP file as you normally would, and write PHP code as you normally would. StaticPHP will take the processed output and turn it into a static HTML file for you.</p>
 

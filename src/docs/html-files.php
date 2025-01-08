@@ -1,9 +1,10 @@
 ---
+layout: src/_includes/docs-layout.php
 page_title: HTML Files
-current_nav_item: docs
 docs_nav_item: html-files
-layout: src/_includes/base.php
 ---
+
+<h2>HTML Files</h2>
 
 <p>For more advanced sites that could benefit from things like loops and conditionals etc will need to use <a href="/docs/php-files">PHP files</a>, but if your site is even simplier, then you just need HTML.</p>
 

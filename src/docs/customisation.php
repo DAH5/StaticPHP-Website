@@ -1,9 +1,10 @@
 ---
+layout: src/_includes/docs-layout.php
 page_title: Customisation
-current_nav_item: docs
 docs_nav_item: customisation
-layout: src/_includes/base.php
 ---
+
+<h2>Customisation</h2>
 
 <p>StaticPHP is designed to be powerful and versatile right out of the box, catering to a wide range of needs. However, there may be times when you need to customise StaticPHP to better fit the specific requirements of your project.</p>
 

@@ -1,9 +1,10 @@
 ---
+layout: src/_includes/docs-layout.php
 page_title: Markdown Files
-current_nav_item: docs
 docs_nav_item: markdown-files
-layout: src/_includes/base.php
 ---
+
+<h2>Markdown Files</h2>
 
 <p>StaticPHP has support for Markdown files. It will treat a file as markdown if it has the <code>.md</code> file extension.</p>
 
@@ -91,4 +92,3 @@ layout: src/_includes/base.php
 <p>There is currently no functional blocks support for Markdown files. This is planned and will likely be added in the future.</p>
 
 <p>Functional blocks can still be used with other files. Refer to the <a href="/docs/functional-blocks">Functional Blocks</a> documentation for more.</p>
-

@@ -1,14 +1,26 @@
 ---
-page_title: Not Found (404)
+page_title: 404 Not Found
 friendly_urls: false
-layout: src/_includes/base.php
+layout: src/_includes/layout.php
 ---
 
-<div class="hero">
+<style type="text/css">
+    .not-found .container { max-width: 50rem; margin: 0 auto; padding: 6rem 1rem; display: flex; flex-direction: column; }
+    .not-found .title { color: #777; }
+    .not-found ins { color: #777; font-style: normal; text-decoration: none; }
+
+    @media ( min-width: 800px )
+    {
+        .not-found .container { flex-direction: row; align-items: center; }
+        .not-found .info { width: 70%; }
+    }
+</style>
+
+<section class="not-found">
     <div class="container">
-        <h2>Not Found <b><i>404</i></b></h2>
-        <p>There is nothing to be found here. You can try again or go to the <a href="/">home</a> page.</p>
+        <div class="info">
+            <p class="title"><b>404.</b> <ins>That's an error.</ins></p>
+            <p class="description">The requested resource could not be found. <ins>That's all we know.</ins></p>
+        </div>
     </div>
-</div>
-
-
+</section>

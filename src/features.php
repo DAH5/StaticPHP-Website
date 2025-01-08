@@ -1,46 +1,60 @@
 ---
-current_nav_item: features
+layout: src/_includes/layout.php
+staticphp_nav_item: features
 page_title: Features
-layout: src/_includes/base.php
 ---
 
-<div class="hero">
+<section class="hero">
     <div class="container">
-        <h2>Powerful Features</h2>
-        <p>Some of the things it can do.</p>
+        <div class="heading">Powerful Features</div>
+        <div class="text">Just some of the things it can do.</div>
     </div>
-</div>
+</section>
 
-<div class="features">
+<section class="features">
     <div class="container">
-        <div class="feature">
-            <h4>Blazing Fast</h4>
-            <p>StaticPHP generates static websites within seconds.</p>
-        </div>
+        <div class="heading">Key Features</div>
 
-        <div class="feature">
-            <h4>Easy To Use</h4>
-            <p>Simple to setup, and easy to run, makes it accessible to everyone.</p>
-        </div>
+        <div class="features">
+            <div class="feature">
+                <div class="title">Blazing Fast</div>
+                <div class="description">StaticPHP generates static websites within seconds.</div>
+            </div>
 
-        <div class="feature">
-            <h4>Flexible and Powerful</h4>
-            <p>Extensive <a href="/docs/customisation">customisation options</a> to fit your needs.</p>
-        </div>
+            <div class="feature">
+                <div class="title">Easy To Use</div>
+                <div class="description">Simple to setup, and easy to run, makes it accessible to everyone.</div>
+            </div>
 
-        <div class="feature">
-            <h4>SEO Friendly URLs</h4>
-            <p>Optimize for Search Engines and have URLs like <code>website.tld/page</code>.</p>
-        </div>
+            <div class="feature">
+                <div class="title">Flexible and Powerful</div>
+                <div class="description">Extensive <a href="/docs/customisation">customisation options</a> to fit your needs.</div>
+            </div>
+            
+            <div class="feature">
+                <div class="title">SEO Friendly URLs</div>
+                <div class="description">Optimize for Search Engines and have URLs like <code>https://website.tld/page</code>.</div>
+            </div>
 
-        <div class="feature">
-            <h4>MetaData</h4>
-            <p>Similar to variables, <a href="/docs/metadata">MetaData</a> is <code>key: value</code> pairs of information, which can be used to customise what StaticPHP does for that page.</p>
-        </div>
+            <div class="feature">
+                <div class="title">MetaData</div>
+                <div class="description">Similar to variables, <a href="/docs/metadata">MetaData</a> is <code>key: value</code> pairs of information, which can be used to customise what StaticPHP does for that page.</div>
+            </div>
+            
+            <div class="feature">
+                <div class="title">Functional Blocks</div>
+                <div class="description"><a href="/docs/functional-blocks">Functional Blocks</a> such as loop blocks can be used to perform certain functions on the page, such as iterate through a list and display information.</div>
+            </div>
 
-        <div class="feature">
-            <h4>Functional Blocks</h4>
-            <p><a href="/docs/functional-blocks">Functional Blocks</a> such as loop blocks can be used to perform certain functions on the page, such as iterate through a list and display information.</p>
+            <div class="feature">
+                <div class="title">Code Minification</div>
+                <div class="description">Make your website even faster and save on bandwidth by enabling <a href="/docs/customisation">code minification</a>.</div>
+            </div>
+
+            <div class="feature">
+                <div class="title">Redirections</div>
+                <div class="description">Bulk path-based <a href="/docs/redirections">redirections</a> take users from one page to another.</div>
+            </div>
         </div>
     </div>
-</div>
+</section>

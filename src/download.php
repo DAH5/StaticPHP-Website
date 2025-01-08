@@ -1,40 +1,46 @@
 ---
-current_nav_item: download
+layout: src/_includes/layout.php
+staticphp_nav_item: download
 page_title: Download
-layout: src/_includes/base.php
 ---
 
-<div class="hero">
+<section class="hero">
     <div class="container">
-        <h2>Download</h2>
-        
-        <p>To get StaticPHP for your own project, you have two options.</p>
-
-
-        <h3>Download The Launcher</h3>
-        
-        <p>The StaticPHP Launcher makes it easy to save your build configuration and stay up to date with the latest developments in StaticPHP.</p>
-
-        <div class="call2action">
-            <a href="http://raw.githubusercontent.com/Softwayr/StaticPHP/master/StaticPHP-Launcher.php" target="_blank" class="button highlight">StaticPHP-Launcher.php on GitHub</a>
-        </div>
-
-        
-        <p>&nbsp;</p>
-
-
-        <h3>Download StaticPHP</h3>
-
-        <p>Alternatively, you can download the actual StaticPHP class file for use with the commandline or your own launcher script.</p>
-
-        <div class="call2action">
-            <a href="http://raw.githubusercontent.com/Softwayr/StaticPHP/master/StaticPHP.php" target="_blank" class="button highlight">StaticPHP.php on GitHub</a>
-        </div>
-
-        <p>&nbsp;</p>
-
-        <hr>
-
-        <p>To learn more about the above methods, check out the <a href="/docs/getting-started">Getting Started</a> guide.</p>
+        <div class="heading">Download</div>
+        <div class="text">StaticPHP is available for download from <a href="https://weburl.net/github/staticphp" target="_blank">GitHub</a> and <a href="https://weburl.net/gitlab/staticphp" target="_blank">GitLab</a>.</div>
     </div>
-</div>
+</section>
+
+<section class="downloads">
+    <div class="container">
+        <div class="download highlight">
+            <div class="title">Launcher (Recommended)</div>
+
+            <ul>
+                <li>Easy Build Configuration</li>
+                <li>Auto Updates to Latest StaticPHP Version</li>
+                <li>Redundant Access to StaticPHP</li>
+            </ul>
+
+            <div class="buttons">
+                <a href="https://weburl.net/github/staticphp/StaticPHP-Launcher" class="primary" target="_blank">GitHub</a>
+                <a href="https://weburl.net/gitlab/staticphp/StaticPHP-Launcher" target="_blank">GitLab</a>
+            </div>
+        </div>
+
+        <div class="download">
+            <div class="title">StaticPHP</div>
+
+            <ul>
+                <li>Completely Offline</li>
+                <li>Launch in the Commandline or Custom Script</li>
+                <li>Manually Update to Next Version of StaticPHP</li>
+            </ul>
+
+            <div class="buttons">
+                <a href="https://weburl.net/github/staticphp/StaticPHP" class="primary" target="_blank">GitHub</a>
+                <a href="https://weburl.net/gitlab/staticphp/StaticPHP" target="_blank">GitLab</a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,9 +1,10 @@
 ---
+layout: src/_includes/docs-layout.php
 page_title: Functional Blocks
-current_nav_item: docs
 docs_nav_item: functional-blocks
-layout: src/_includes/base.php
 ---
+
+<h2>Functional Blocks</h2>
 
 <p>Functional Blocks in StaticPHP allow you to create dynamic content without writing PHP. They are similar to using PHP functions but with a simplified syntax.</p>
 
@@ -121,15 +122,15 @@ layout: src/_includes/base.php
 
 <pre>
     ---<br>
-    page-title: Welcome<br>
+    page_title: Welcome<br>
     ---
 </pre>
 
 <p>You want to check if there is a title before displaying it, so you have the following if functional block...</p>
 
 <pre>
-    ---&nbsp;if( page-title )&nbsp;---<br>
-        &lt;h1&gt;--- metadata.page-title ---&lt;/h1&gt;<br>
+    ---&nbsp;if( page_title )&nbsp;---<br>
+        &lt;h1&gt;--- metadata.page_title ---&lt;/h1&gt;<br>
     ---&nbsp;endif&nbsp;---
 </pre>
 

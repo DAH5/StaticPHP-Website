@@ -1,9 +1,10 @@
 ---
+layout: src/_includes/docs-layout.php
 page_title: Getting Started
-current_nav_item: docs
 docs_nav_item: getting-started
-layout: src/_includes/base.php
 ---
+
+<h2>Getting Started</h2>
 
 <h3>Step One: Download and Install</h3>
 

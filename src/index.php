@@ -1,64 +1,70 @@
 ---
-current_nav_item: home
-layout: src/_includes/base.php
+layout: src/_includes/layout.php
+staticphp_nav_item: home
 ---
 
-<div class="hero">
+<section class="hero home">
     <div class="container">
-        <h2>--- metadata.site_title ---: --- metadata.site_tagline ---</h2>
-        <p>Build static websites effortlessly with PHP.</p>
-
-        <div class="call2action">
-            <a href="/docs/getting-started" class="button highlight">Get Started</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="/docs" class="button">View Documentation</a>
+        <div class="heading">The Fast and Simple Static Site Generator</div>
+        <div class="text">Empowering you to develop great sites in ways you never knew were possible.</div>
+        <div class="buttons">
+            <a href="/docs/getting-started" class="primary">Get Started</a>
+            <a href="/download">Download</a>
         </div>
     </div>
-</div>
+</section>
 
-<div class="key-features">
+<section class="features">
     <div class="container">
-        <h3>Key Features</h3>
+        <div class="heading">Key Features</div>
 
-        <div class="feature">
-            <h4>Blazing Fast</h4>
-            <p>StaticPHP generates static websites within seconds.</p>
+        <div class="features">
+            <div class="feature">
+                <div class="title">Blazing Fast</div>
+                <div class="description">StaticPHP generates static websites within seconds.</div>
+            </div>
+
+            <div class="feature">
+                <div class="title">Easy To Use</div>
+                <div class="description">Simple to setup, and easy to run, makes it accessible to everyone.</div>
+            </div>
+
+            <div class="feature">
+                <div class="title">Flexible and Powerful</div>
+                <div class="description">Extensive <a href="/docs/customisation">customisation options</a> to fit your needs.</div>
+            </div>
         </div>
 
-        <div class="feature">
-            <h4>Easy To Use</h4>
-            <p>Simple to setup, and easy to run, makes it accessible to everyone.</p>
-        </div>
-
-        <div class="feature">
-            <h4>Flexible and Powerful</h4>
-            <p>Extensive <a href="/docs/customisation">customisation options</a> to fit your needs.</p>
-        </div>
-
-        <div class="feature">
-            <h4>SEO Friendly URLs</h4>
-            <p>Optimize for Search Engines and have URLs like <code>website.tld/page</code>.</p>
+        <div class="features">
+            <div class="feature">
+                <div class="title">SEO Friendly URLs</div>
+                <div class="description">Optimize for Search Engines and have URLs like <code>https://website.tld/page</code>.</div>
+            </div>
         </div>
     </div>
-</div>
+</section>
 
-<div class="howitworks">
+<section class="howitworks">
     <div class="container">
-        <h3>How It Works</h3>
+        <div class="heading">How It Works</div>
+        
+        <p style="text-align: center;"><img src="/assets/images/staticphp-demo-1.gif" style="max-width: 40rem; width: calc( 100% + 4rem ); margin-left: -2rem; margin-right: -2rem;"></p>
 
-        <div class="step">
-            <h4>Install StaticPHP</h4>
-            <p>Find out how to do this in the <a href="/docs/getting-started">Getting Started</a> guide.</p>
-        </div>
+        <div class="facts">
+            <div class="fact">
+                <div class="title">Install StaticPHP</div>
+                <div class="description">Find out how to do this in the <a href="/docs/getting-started">Getting Started</a> guide.</div>
+            </div>
 
-        <div class="step">
-            <h4>Create Your Site</h4>
-            <p>Using PHP and/or HTML files.</p>
-        </div>
+            <div class="fact">
+                <div class="title">Create Your Site</div>
+                <div class="description">Using PHP and/or HTML files.</div>
+            </div>
 
-        <div class="step">
-            <h4>Build and Deploy</h4>
-            <p>Run StaticPHP to render the static files for your site, and deploy to your server.</p>
+            <div class="fact">
+                <div class="title">Build and Deploy</div>
+                <div class="description">Run StaticPHP to render the static files for your site, and deploy to your server.</div>
+            </div>
         </div>
     </div>
-</div>
+</section>

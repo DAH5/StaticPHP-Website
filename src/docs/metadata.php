@@ -1,9 +1,10 @@
 ---
+layout: src/_includes/docs-layout.php
 page_title: MetaData
-current_nav_item: docs
 docs_nav_item: metadata
-layout: src/_includes/base.php
 ---
+
+<h2>MetaData</h2>
 
 <p>MetaData is an area at the top of your source files where you can store information for later reference or for StaticPHP to use during the build process.</p>
 			
