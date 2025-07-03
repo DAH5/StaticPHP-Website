@@ -15,11 +15,11 @@ docs_nav_item: functional-blocks
 <p>Here's an example:</p>
 
 <pre>
-    --- func(key = "value", another-key = "another-value") ---<br>
-    <br>
-    Put anything here.<br>
-    <br>
-    --- endfunc ---
+--- func(key = "value", another-key = "another-value") ---
+
+Put anything here.
+
+--- endfunc ---
 </pre>
 
 <h3>The Loop Functional Block</h3>
@@ -35,11 +35,11 @@ docs_nav_item: functional-blocks
 <p>Example:</p>
 
 <pre>
-    --- loop(dir = "src/items") ---<br>
-    <br>
-    Item Name: --- loop.item-name ---<br>
-    <br>
-    --- endloop ---
+--- loop(dir = "src/items") ---
+
+Item Name: --- loop.item-name ---
+
+--- endloop ---
 </pre>
 
 <p>For more information on setting MetaData in files and using placeholders, refer to the <a href="/docs/metadata">MetaData</a> page.</p>
@@ -53,11 +53,11 @@ docs_nav_item: functional-blocks
 <h5>Example of sorting using <code>dir</code>:</h5>
 
 <pre>
-    --- loop(dir = "src/items", sort = "descending") ---<br>
-    <br>
-    Item Name: --- loop.item-name ---<br>
-    <br>
-    --- endloop ---
+--- loop(dir = "src/items", sort = "descending") ---
+
+Item Name: --- loop.item-name ---
+
+--- endloop ---
 </pre>
 
 <h4>Outputting JSON</h4>
@@ -67,11 +67,11 @@ docs_nav_item: functional-blocks
 <p>Example of JSON output:</p>
 
 <pre>
-    --- loop(dir = "src/items", json = "src/api/items.json") ---<br>
-    <br>
-    Item Name: --- loop.item-name ---<br>
-    <br>
-    --- endloop ---
+--- loop(dir = "src/items", json = "src/api/items.json") ---
+
+Item Name: --- loop.item-name ---
+
+--- endloop ---
 </pre>
 
 <h4>Ignoring Items</h4>
@@ -81,11 +81,11 @@ docs_nav_item: functional-blocks
 <p>Example of ignoring items:</p>
 
 <pre>
-    --- loop(dir = "src/items", ignores = "ignore-this; ignore-that") ---<br>
-    <br>
-    Item Name: --- loop.item-name ---<br>
-    <br>
-    --- endloop ---
+--- loop(dir = "src/items", ignores = "ignore-this; ignore-that") ---
+
+Item Name: --- loop.item-name ---
+
+--- endloop ---
 </pre>
 
 <h3>The If Functional Block</h3>
@@ -97,23 +97,23 @@ docs_nav_item: functional-blocks
 <p>Assume you have the following MetaData at the top of your home page file, indicating that this page is the home page.</p>
 
 <pre>
-    ---<br>
-    current-page: home<br>
-    ---
+---
+current-page: home
+---
 </pre>
 
 <p>You can perform a check that the current page is the home page using the following <code>if</code> functional block.</p>
 
 <pre>
-    ---&nbsp;if( current-page == "home" )&nbsp;---<br>
-        &lt;p&gt;This is the home page.&lt;/p&gt;<br>
-    ---&nbsp;endif&nbsp;---
+---&nbsp;if( current-page == "home" )&nbsp;---
+    &lt;p&gt;This is the home page.&lt;/p&gt;
+---&nbsp;endif&nbsp;---
 </pre>
 
 <p>When the condition is true, it will output the content inside.</p>
 
 <pre>
-    &lt;p&gt;This is the home page.&lt;/p&gt;
+&lt;p&gt;This is the home page.&lt;/p&gt;
 </pre>
 
 <h4>Checking the Key Only</h4>
@@ -121,23 +121,23 @@ docs_nav_item: functional-blocks
 <p>The IF functional block can be used to only check if the key exists. Assume you want to output the page title, and have the following MetaData...</p>
 
 <pre>
-    ---<br>
-    page-title: Welcome<br>
-    ---
+---
+page-title: Welcome
+---
 </pre>
 
 <p>You want to check if there is a title before displaying it, so you have the following if functional block...</p>
 
 <pre>
-    ---&nbsp;if( page-title )&nbsp;---<br>
-        &lt;h1&gt;--- metadata.page-title ---&lt;/h1&gt;<br>
-    ---&nbsp;endif&nbsp;---
+---&nbsp;if( page-title )&nbsp;---
+    &lt;h1&gt;--- metadata.page-title ---&lt;/h1&gt;
+---&nbsp;endif&nbsp;---
 </pre>
 
 <p>When the condition is true, it will output the content inside.</p>
 
 <pre>
-    &lt;h1&gt;Welcome&lt;/h1&gt;
+&lt;h1&gt;Welcome&lt;/h1&gt;
 </pre>
 
 <p>The if functional block is currently limited to this basic functionality. The functionality may get extended in the future.</p>

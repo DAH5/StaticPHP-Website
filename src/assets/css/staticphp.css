@@ -14,13 +14,6 @@ body
     font-family: Helvetica, Arial, sans-serif;
 }
 
-html.dark-mode,
-html.dark-mode body
-{
-    background-color: #111;
-    color: #eee;
-}
-
 .container
 {
     max-width: 80rem;
@@ -66,6 +59,18 @@ img
     background-color: #4F5B93;
     color: #ffffff;
     text-align: center;
+}
+
+.staticphp .footer
+{
+    font-size: 0.8rem;
+    background-color: #475284;
+    color: #ccc;
+}
+
+.staticphp .footer a
+{
+    color: #fff;
 }
 
 .staticphp .header .container
@@ -266,6 +271,8 @@ img
 .staticphp .docs nav a.current
 {
     background-color: #ffffff;
+    border: 4px inset #ffffff;
+    border-right-width: 0;
 }
 
 .staticphp .content
@@ -546,5 +553,63 @@ img
     .staticphp .downloads .download .buttons a
     {
         width: 50%;
+    }
+}
+
+@media ( prefers-color-scheme: dark )
+{
+    html,
+    body
+    {
+        background-color: #333;
+        color: #ccc;
+    }
+
+    .staticphp a
+    {
+        color: #fff;
+    }
+
+    .staticphp section.features
+    {
+        background-color: #222;
+    }
+
+    .staticphp .docs
+    {
+        background-color: #333;
+    }
+
+    .staticphp code,
+    .staticphp pre
+    {
+        background-color: #222;
+        color: #fff;
+    }
+
+    .staticphp .docs nav
+    {
+        background-color: #222;
+    }
+
+    .staticphp .docs nav a
+    {
+        color: #ffffff;
+    }
+
+    .staticphp .docs nav a:hover
+    {
+        background-color: #444;
+    }
+
+    .staticphp .docs nav a.current
+    {
+        background-color: #333;
+        border-color: #222;
+    }
+
+    .staticphp .downloads .download
+    {
+        background-color: #222;
     }
 }

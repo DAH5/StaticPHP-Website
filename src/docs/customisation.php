@@ -52,6 +52,8 @@ docs_nav_item: customisation
 
 <p><strong>JavaScript Minification</strong> is currently <strong>Disabled</strong> due to a bug in the minification process. It will be re-enabled once the bug has been fixed.</p>
 
+<p><b>HTML Tag Preservation:</b> Sometimes you may want certain tags, like <code>&lt;pre&gt;</code>, to remain unminified so that things like code snippets remain intact. Simply set <code>minify_html_tags_to_preserve</code> to an array of tag names in your StaticPHP configuration.</p>
+
 <hr>
 
 <p>For more information on customising StaticPHP, be sure to check out the <a href="/docs/getting-started">Getting Started</a> guide. For options available to be overridden on a per-file basis, refer to the <a href="/docs/metadata">MetaData</a> guide.</p>

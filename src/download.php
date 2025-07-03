@@ -7,7 +7,7 @@ page_title: Download
 <section class="hero">
     <div class="container">
         <div class="heading">Download</div>
-        <div class="text">StaticPHP is available for download from <a href="https://weburl.net/github/staticphp" target="_blank">GitHub</a> and <a href="https://weburl.net/gitlab/staticphp" target="_blank">GitLab</a>.</div>
+        <div class="text">StaticPHP is available for download from <a href="https://redirect.dah5.me.uk/github/staticphp" target="_blank">GitHub</a> and <a href="https://redirect.dah5.me.uk/gitlab/staticphp" target="_blank">GitLab</a>.</div>
     </div>
 </section>
 
@@ -23,8 +23,8 @@ page_title: Download
             </ul>
 
             <div class="buttons">
-                <a href="https://weburl.net/github/staticphp/StaticPHP-Launcher" class="primary" target="_blank">GitHub</a>
-                <a href="https://weburl.net/gitlab/staticphp/StaticPHP-Launcher" target="_blank">GitLab</a>
+                <a href="https://redirect.dah5.me.uk/github/staticphp/StaticPHP-Launcher" class="primary" target="_blank">GitHub</a>
+                <a href="https://redirect.dah5.me.uk/gitlab/staticphp/StaticPHP-Launcher" target="_blank">GitLab</a>
             </div>
         </div>
 
@@ -38,8 +38,8 @@ page_title: Download
             </ul>
 
             <div class="buttons">
-                <a href="https://weburl.net/github/staticphp/StaticPHP" class="primary" target="_blank">GitHub</a>
-                <a href="https://weburl.net/gitlab/staticphp/StaticPHP" target="_blank">GitLab</a>
+                <a href="https://redirect.dah5.me.uk/github/staticphp/StaticPHP" class="primary" target="_blank">GitHub</a>
+                <a href="https://redirect.dah5.me.uk/gitlab/staticphp/StaticPHP" target="_blank">GitLab</a>
             </div>
         </div>
     </div>

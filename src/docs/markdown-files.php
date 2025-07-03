@@ -19,10 +19,10 @@ docs_nav_item: markdown-files
 <p>Simple lines of text forming sentenses or paragraphs can be written on their own. Linebreaks are supported too.</p>
 
 <pre>
-    The quick brown fox jumped over the lazy dog.<br>
-    <br>
-    The quick brown fox<br>
-    jumped over the lazy dog.
+The quick brown fox jumped over the lazy dog.
+
+The quick brown fox
+jumped over the lazy dog.
 </pre>
 
 <h4>Headings</h4>
@@ -30,12 +30,12 @@ docs_nav_item: markdown-files
 <p>StaticPHP supports all six headings in Markdown.</p>
 
 <pre>
-    # Heading 1<br>
-    ## Heading 2<br>
-    ### Heading 3<br>
-    #### Heading 4<br>
-    ##### Heading 5<br>
-    ###### Heading 6
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
 </pre>
 
 <h4>Inline Text Formatting</h4>
@@ -43,9 +43,9 @@ docs_nav_item: markdown-files
 <p>You can format your text as <strong>bold</strong>, <em>italic</em>, and <del>strikethrough</del>.</p>
 
 <pre>
-    **bold** or __bold__<br>
-    *italic* or _italic_<br>
-    ~~strikethrough~~
+**bold** or __bold__
+*italic* or _italic_
+~~strikethrough~~
 </pre>
 
 <h4>Hyperlinks</h4>
@@ -53,13 +53,13 @@ docs_nav_item: markdown-files
 <p>Linking to other resources can be done too.</p>
 
 <pre>
-    [Link Text](http://hostname.tld/resource)
+[Link Text](http://hostname.tld/resource)
 </pre>
 
 <p>You can also add a title to the hyperlink.</p>
 
 <pre>
-    [Link Text](http://hostname.tld/resource "Title Text")
+[Link Text](http://hostname.tld/resource "Title Text")
 </pre>
 
 <h4>Images</h4>
@@ -67,13 +67,13 @@ docs_nav_item: markdown-files
 <p>Adding images is very similar to hyperlinks.</p>
 
 <pre>
-    ![Alt Text](http://hostname.tld/image.png)
+![Alt Text](http://hostname.tld/image.png)
 </pre>
 
 <p>With a title.</p>
 
 <pre>
-    ![Alt Text](http://hostname.tld/image.png "Title Text")
+![Alt Text](http://hostname.tld/image.png "Title Text")
 </pre>
 
 <h4>Code and Code Blocks</h4>

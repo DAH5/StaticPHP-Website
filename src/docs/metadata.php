@@ -15,9 +15,9 @@ docs_nav_item: metadata
 <p>Here is an example of MetaData at the top of a source file:</p>
 			
 <pre>
----<br>
-some_key: some value<br>
-another_key: another value<br>
+---
+some_key: some value
+another_key: another value
 ---
 </pre>
 			
@@ -30,17 +30,17 @@ another_key: another value<br>
 <p>For example, given the MetaData above, you can retrieve these values like this:</p>
 			
 <pre>
-	&lt;p&gt;--- metadata.some_key ---&lt;/p&gt;<br>
-	<br>
-	&lt;p&gt;--- metadata.another_key ---&lt;/p&gt;
+&lt;p&gt;--- metadata.some_key ---&lt;/p&gt;
+
+&lt;p&gt;--- metadata.another_key ---&lt;/p&gt;
 </pre>
 	
 <p>This will output:</p>
 
 <pre>
-	&lt;p&gt;some value&lt;/p&gt;<br>
-	<br>
-	&lt;p&gt;another value&lt;/p&gt;
+&lt;p&gt;some value&lt;/p&gt;
+
+&lt;p&gt;another value&lt;/p&gt;
 </pre>
 
 <h3>Special MetaData</h3>
@@ -62,44 +62,44 @@ another_key: another value<br>
 <p>Add the layout MetaData key in the source file of the page you want the base layout applied to, with the value being the path to the base layout file.</p>
 
 <pre>
-	---<br>
-	page-title: Awesome Page<br>
-	layout: SOURCE-FILES/IGNORE-FILES/base-layout.php<br>
-	---<br>
-	<br>
-	&lt;h2&gt;--- metadata.page-title ---&lt;/h2&gt;<br>
-	&lt;p&gt;This is a very awesome page. I am so glad you checked it out! :)&lt;/p&gt;
+---
+page-title: Awesome Page
+layout: SOURCE-FILES/IGNORE-FILES/base-layout.php
+---
+
+&lt;h2&gt;--- metadata.page-title ---&lt;/h2&gt;
+&lt;p&gt;This is a very awesome page. I am so glad you checked it out! :)&lt;/p&gt;
 </pre>
 
 <p>In the base layout file, add the <code>content_placeholder</code> MetaData key to specify where the content of the specific page will be inserted.</p>
 
 <pre>
-	---<br>
-	content_placeholder: {{ content }}<br>
-	---<br>
-	<br>
-	&lt;!DOCTYPE html&gt;<br>
-	&lt;html lang="en"&gt;<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
-			<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;--- metadata.page-title --- - Awesome Website - powered by StaticPHP&lt;/title&gt;<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
-		<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Awesome Website&lt;/h1&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;powered by StaticPHP&lt;/p&gt;<br>
-			<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;<br>
-			<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ content }}<br>
-			<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;<br>
-			<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Copyright © Awesome Developer.&lt;/p&gt;<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
-	&lt;/html&gt;
+---
+content_placeholder: {{ content }}
+---
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;--- metadata.page-title --- - Awesome Website - powered by StaticPHP&lt;/title&gt;
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;
+	
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Awesome Website&lt;/h1&gt;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;powered by StaticPHP&lt;/p&gt;
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ content }}
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Copyright © Awesome Developer.&lt;/p&gt;
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;
+&lt;/html&gt;
 </pre>
 
 <p>By following these steps, you can easily manage MetaData in your StaticPHP projects, enabling greater flexibility and control over your static website generation process. For more detailed information, refer to the accompanying documentation and guides.</p>

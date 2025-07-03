@@ -21,10 +21,11 @@ docs_nav_item: getting-started
 <p><b>Example .gitignore file:</b></p>
 
 <pre>
-	# Ignore Generated Output Files<br>
-	public<br>
-	# Ignore StaticPHP File<br>
-	StaticPHP.php
+# Ignore Generated Output Files
+public
+
+# Ignore StaticPHP File
+StaticPHP.php
 </pre>
 
 <p>The above example will ensure that only the source files are commited to Git because the generated output files can be regenerated anytime, so make sure to replace <code>public</code> with your chosen folder/directory name. It also includes an entry to ignore <code>StaticPHP.php</code> which is recommended when using the launcher to ensure the main StaticPHP file does not get commited too. If you are not using the launcher, you may want this file included, so simply remove that line. Lines that start with a hash symbol <code>#</code> are comments.</p>
@@ -78,30 +79,30 @@ docs_nav_item: getting-started
 <p>You can create a custom launcher script for more flexibility. Here is an example:</p>
 
 <pre>
-&lt;?php<br>
-<br>
-$source_dir_path = __DIR__ . DIRECTORY_SEPARATOR . 'src';<br>
-$output_dir_path = __DIR__ . DIRECTORY_SEPARATOR . 'public';<br>
-$items_to_ignore = array( '_includes' );<br>
-$friendly_urls = true;<br>
-$metadata_delimiter = '---';<br>
-$minify_html = true;<br>
-$minify_css = true;<br>
-$minify_js = true;<br>
-<br>
-include __DIR__ . DIRECTORY_SEPARATOR . 'StaticPHP.php';<br>
-<br>
-new StaticPHP<br>
-(<br>
-&nbsp;&nbsp;&nbsp;&nbsp;$source_dir_path,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;$output_dir_path,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;$items_to_ignore,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;$friendly_urls,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;$metadata_delimiter,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;$minify_html,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;$minify_css,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;$minify_js<br>
-);<br>
+&lt;?php
+
+$source_dir_path = __DIR__ . DIRECTORY_SEPARATOR . 'src';
+$output_dir_path = __DIR__ . DIRECTORY_SEPARATOR . 'public';
+$items_to_ignore = array( '_includes' );
+$friendly_urls = true;
+$metadata_delimiter = '---';
+$minify_html = true;
+$minify_css = true;
+$minify_js = true;
+
+include __DIR__ . DIRECTORY_SEPARATOR . 'StaticPHP.php';
+
+new StaticPHP
+(
+&nbsp;&nbsp;&nbsp;&nbsp;$source_dir_path,
+&nbsp;&nbsp;&nbsp;&nbsp;$output_dir_path,
+&nbsp;&nbsp;&nbsp;&nbsp;$items_to_ignore,
+&nbsp;&nbsp;&nbsp;&nbsp;$friendly_urls,
+&nbsp;&nbsp;&nbsp;&nbsp;$metadata_delimiter,
+&nbsp;&nbsp;&nbsp;&nbsp;$minify_html,
+&nbsp;&nbsp;&nbsp;&nbsp;$minify_css,
+&nbsp;&nbsp;&nbsp;&nbsp;$minify_js
+);
 </pre>
 
 
