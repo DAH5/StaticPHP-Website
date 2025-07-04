@@ -587,17 +587,20 @@ img
         color: #fff;
     }
 
-    .staticphp .docs nav
+    .staticphp .docs nav,
+    .staticphp .mobile-nav-header
     {
         background-color: #222;
     }
 
-    .staticphp .docs nav a
+    .staticphp .docs nav a,
+    .staticphp .mobile-nav-header a
     {
         color: #ffffff;
     }
 
-    .staticphp .docs nav a:hover
+    .staticphp .docs nav a:hover,
+    #staticphp_docs_nav_toggle:checked ~ .docs .mobile-nav-header
     {
         background-color: #444;
     }
