@@ -14,6 +14,8 @@ docs_nav_item: redirections
 
 <p>The <b>Bulk Redirects</b> feature in StaticPHP enables you to manage multiple redirects easily using a single file: <code>_bulk_redirects</code>. This file allows you to list all your redirection rules in one place, making it simple to update or add new redirects without modifying your codebase.</p>
 
+<p>You can customise the name of this file in your build configuration by setting <code>bulk_redirects_filename</code> to your preferred filename.</p>
+
 <h4>Format</h4>
 
 <p>Each redirection rule should be placed on a new line. The format consists of two parts:</p>
@@ -113,6 +115,8 @@ redirect: https://example.tld/new
 <h4>Custom Redirection Template</h4>
 
 <p>You can specify your own HTML structure for the redirection page by creating a file in the root of your source directory called <code>_redirection_template.html</code>. If this file exists, StaticPHP will use its contents when generating the redirection page, giving you full control over the design, layout, and even the timing of the redirection.</p>
+
+<p>You can customise the name of this file in your build configuration by setting <code>redirection_template_filename</code> to your preferred filename.</p>
 
 <p>This customization allows you to adjust the timing of the redirection, should you want to delay it for any reason (e.g., to display a message to users before they are redirected).</p>
 
