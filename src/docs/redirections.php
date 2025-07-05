@@ -99,14 +99,14 @@ redirect: https://example.tld/new
 <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta http-equiv="refresh" content="0; url='https://example.tld/new'" /&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Redirecting...&lt;/title&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;If you are not redirected, &lt;a href="https://example.tld/new"&gt;click here&lt;/a&gt;.&lt;/p&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv="refresh" content="0; url='https://example.tld/new'" /&gt;
+        &lt;title&gt;Redirecting...&lt;/title&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+        &lt;p&gt;If you are not redirected, &lt;a href="https://example.tld/new"&gt;click here&lt;/a&gt;.&lt;/p&gt;
+    &lt;/body&gt;
 &lt;/html&gt;
 </pre>
 
@@ -134,19 +134,19 @@ redirect: https://example.tld/new
 <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta http-equiv="refresh" content="5; url='$newDestination'" /&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Redirecting...&lt;/title&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Redirecting...&lt;/h1&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;You are about to be redirected from &lt;b&gt;$oldPath&lt;/b&gt; to &lt;b&gt;$newDestination&lt;/b&gt;.&lt;/p&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;If you are not redirected within 5 seconds, &lt;a href="$newDestination"&gt;click here&lt;/a&gt;.&lt;/p&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;meta http-equiv="refresh" content="5; url='$newDestination'" /&gt;
+
+        &lt;title&gt;Redirecting...&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;h1&gt;Redirecting...&lt;/h1&gt;
+        &lt;p&gt;You are about to be redirected from &lt;b&gt;$oldPath&lt;/b&gt; to &lt;b&gt;$newDestination&lt;/b&gt;.&lt;/p&gt;
+        &lt;p&gt;If you are not redirected within 5 seconds, &lt;a href="$newDestination"&gt;click here&lt;/a&gt;.&lt;/p&gt;
+    &lt;/body&gt;
 &lt;/html&gt;
 </pre>
 

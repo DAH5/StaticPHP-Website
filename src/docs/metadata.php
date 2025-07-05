@@ -80,25 +80,25 @@ content_placeholder: {{ content }}
 
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
-	&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+	&lt;head&gt;
+		&lt;meta charset="UTF-8"&gt;
+		&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
 		
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;--- metadata.page-title --- - Awesome Website - powered by StaticPHP&lt;/title&gt;
-	&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;
+		&lt;title&gt;--- metadata.page-title --- - Awesome Website - powered by StaticPHP&lt;/title&gt;
+	&lt;/head&gt;
 	
-	&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Awesome Website&lt;/h1&gt;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;powered by StaticPHP&lt;/p&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Awesome Website&lt;/h1&gt;
+		&lt;p&gt;powered by StaticPHP&lt;/p&gt;
 		
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;
+		&lt;hr&gt;
 		
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ content }}
+		{{ content }}
 		
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;
+		&lt;hr&gt;
 		
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Copyright © Awesome Developer.&lt;/p&gt;
-	&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;
+		&lt;p&gt;Copyright © Awesome Developer.&lt;/p&gt;
+	&lt;/body&gt;
 &lt;/html&gt;
 </pre>
 

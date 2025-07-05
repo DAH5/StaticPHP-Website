@@ -103,17 +103,17 @@ include __DIR__ . DIRECTORY_SEPARATOR . 'StaticPHP.php';
 
 new StaticPHP
 (
-&nbsp;&nbsp;&nbsp;&nbsp;$source_dir_path,
-&nbsp;&nbsp;&nbsp;&nbsp;$output_dir_path,
-&nbsp;&nbsp;&nbsp;&nbsp;$items_to_ignore,
-&nbsp;&nbsp;&nbsp;&nbsp;$friendly_urls,
-&nbsp;&nbsp;&nbsp;&nbsp;$metadata_delimiter,
-&nbsp;&nbsp;&nbsp;&nbsp;$minify_html,
-&nbsp;&nbsp;&nbsp;&nbsp;$minify_css,
-&nbsp;&nbsp;&nbsp;&nbsp;$minify_js,
-&nbsp;&nbsp;&nbsp;&nbsp;$minify_html_tags_to_preserve,
-&nbsp;&nbsp;&nbsp;&nbsp;$bulk_redirects_filename,
-&nbsp;&nbsp;&nbsp;&nbsp;$redirection_template_filename
+	$source_dir_path,
+	$output_dir_path,
+	$items_to_ignore,
+	$friendly_urls,
+	$metadata_delimiter,
+	$minify_html,
+	$minify_css,
+	$minify_js,
+	$minify_html_tags_to_preserve,
+	$bulk_redirects_filename,
+	$redirection_template_filename
 );
 </pre>
 
