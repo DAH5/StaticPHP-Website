@@ -20,14 +20,14 @@ staticphp_nav_item: docs
         </div>
 
         <nav>
-            <a href="/docs/getting-started"--- if( docs_nav_item == "getting-started" ) --- class="current"--- endif --->Getting Started</a>
-            <a href="/docs/metadata"--- if( docs_nav_item == "metadata" ) --- class="current"--- endif --->MetaData</a>
-            <a href="/docs/functional-blocks"--- if( docs_nav_item == "functional-blocks" ) --- class="current"--- endif --->Functional Blocks</a>
-            <a href="/docs/customisation"--- if( docs_nav_item == "customisation" ) --- class="current"--- endif --->Customisation</a>
-            <a href="/docs/html-files"--- if( docs_nav_item == "html-files" ) --- class="current"--- endif --->HTML Files</a>
-            <a href="/docs/php-files"--- if( docs_nav_item == "php-files" ) --- class="current"--- endif --->PHP Fils</a>
-            <a href="/docs/markdown-files"--- if( docs_nav_item == "markdown-files" ) --- class="current"--- endif --->Markdown Files</a>
-            <a href="/docs/redirections"--- if( docs_nav_item == "redirections" ) --- class="current"--- endif --->Redirections</a>
+            <a href="/docs/Getting-Started"--- if( docs_nav_item == "getting-started" ) --- class="current"--- endif --->Getting Started</a>
+            <a href="/docs/MetaData"--- if( docs_nav_item == "metadata" ) --- class="current"--- endif --->MetaData</a>
+            <a href="/docs/Functional-Blocks"--- if( docs_nav_item == "functional-blocks" ) --- class="current"--- endif --->Functional Blocks</a>
+            <a href="/docs/Customisation"--- if( docs_nav_item == "customisation" ) --- class="current"--- endif --->Customisation</a>
+            <a href="/docs/HTML-Files"--- if( docs_nav_item == "html-files" ) --- class="current"--- endif --->HTML Files</a>
+            <a href="/docs/PHP-Files"--- if( docs_nav_item == "php-files" ) --- class="current"--- endif --->PHP Fils</a>
+            <a href="/docs/Markdown-Files"--- if( docs_nav_item == "markdown-files" ) --- class="current"--- endif --->Markdown Files</a>
+            <a href="/docs/Redirections"--- if( docs_nav_item == "redirections" ) --- class="current"--- endif --->Redirections</a>
         </nav>
 
         <div class="content">
