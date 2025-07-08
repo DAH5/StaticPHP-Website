@@ -8,7 +8,7 @@ staticphp_nav_item: home
         <div class="heading">The Fast and Simple Static Site Generator</div>
         <div class="text">Empowering you to develop great sites in ways you never knew were possible.</div>
         <div class="buttons">
-            <a href="/docs/Getting-Started" class="primary">Get Started</a>
+            <a href="/docs/Getting-Started.html" class="primary">Get Started</a>
             <a href="/download">Download</a>
         </div>
     </div>
@@ -31,7 +31,7 @@ staticphp_nav_item: home
 
             <div class="feature">
                 <div class="title">Flexible and Powerful</div>
-                <div class="description">Extensive <a href="/docs/Customisation">customisation options</a> to fit your needs.</div>
+                <div class="description">Extensive <a href="/docs/Customisation.html">customisation options</a> to fit your needs.</div>
             </div>
         </div>
 
@@ -53,7 +53,7 @@ staticphp_nav_item: home
         <div class="facts">
             <div class="fact">
                 <div class="title">Install StaticPHP</div>
-                <div class="description">Find out how to do this in the <a href="/docs/Getting-Started">Getting Started</a> guide.</div>
+                <div class="description">Find out how to do this in the <a href="/docs/Getting-Started.html">Getting Started</a> guide.</div>
             </div>
 
             <div class="fact">

@@ -25,9 +25,9 @@
 
                     <nav>
                         <a href="/"--- if( staticphp_nav_item == "home" ) --- class="current"--- endif --->Home</a>
-                        <a href="/features"--- if( staticphp_nav_item == "features" ) --- class="current"--- endif --->Features</a>
+                        <a href="/features.html"--- if( staticphp_nav_item == "features" ) --- class="current"--- endif --->Features</a>
                         <a href="/docs"--- if( staticphp_nav_item == "docs" ) --- class="current"--- endif --->Docs</a>
-                        <a href="/download"--- if( staticphp_nav_item == "download" ) --- class="current"--- endif --->Download</a>
+                        <a href="/download.html"--- if( staticphp_nav_item == "download" ) --- class="current"--- endif --->Download</a>
                     </nav>
                 </div>
             </div>
