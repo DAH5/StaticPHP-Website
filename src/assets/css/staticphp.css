@@ -281,22 +281,6 @@ img
     line-height: 1.6;
 }
 
-/*.staticphp code
-{
-    background-color: #eee;
-    padding: 0.3rem;
-    border-radius: 0.5rem;
-}
-
-.staticphp pre code
-{
-    background-color: #eee;
-    overflow-x: auto;
-    padding: 0.3rem 1rem;
-    margin: 0 -1rem;
-    padding: 0;
-}*/
-
 .staticphp pre,
 .staticphp code
 {
@@ -524,7 +508,8 @@ img
     .staticphp .docs .content
     {
         width: 80%;
-        padding: 2rem 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .staticphp .docs .content h2
@@ -543,20 +528,6 @@ img
         margin-right: 0;
         border-radius: 0.5rem 0rem 0rem 0.5rem;
     }
-
-    /*.staticphp pre
-    {
-        margin: 0 -0.7rem;
-        padding: 0.3rem 0.7rem;
-        border-radius: 0.5rem;
-    }
-
-    .staticphp pre code
-    {
-        margin: 0;
-        padding-top: -1rem;
-        padding: 0;
-    }*/
 
     .staticphp pre,
     .staticphp code
