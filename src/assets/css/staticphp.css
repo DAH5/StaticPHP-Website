@@ -275,6 +275,13 @@ img
     border-right-width: 0;
 }
 
+.staticphp .docs ul
+{
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+}
+
 .staticphp .content
 {
     padding: 0 1rem;
