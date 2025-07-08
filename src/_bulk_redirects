@@ -1,9 +1,9 @@
 /docs /docs/Getting-Started.html
-/docs/Getting-Started.md /docs/Getting-Started.html
-/docs/MetaData.md /docs/MetaData.html
-/docs/Functional-Blocks.md /docs/Functional-Blocks.html
-/docs/Customisation.md /docs/Customisation.html
-/docs/HTML-Files.md /docs/HTML-Files.html
-/docs/PHP-Files.md /docs/PHP-Files.html
-/docs/Markdown-Files.md /docs/Markdown-Files.html
-/docs/Redirections.md /docs/Redirections.html
+/docs/Getting-Started.md/index.html /docs/Getting-Started.html
+/docs/MetaData.md/index.html /docs/MetaData.html
+/docs/Functional-Blocks.md/index.html /docs/Functional-Blocks.html
+/docs/Customisation.md/index.html /docs/Customisation.html
+/docs/HTML-Files.md/index.html /docs/HTML-Files.html
+/docs/PHP-Files.md/index.html /docs/PHP-Files.html
+/docs/Markdown-Files.md/index.html /docs/Markdown-Files.html
+/docs/Redirections.md/index.html /docs/Redirections.html
