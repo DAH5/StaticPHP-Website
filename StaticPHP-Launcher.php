@@ -94,6 +94,39 @@ $configurable_options[ 'minify_html_tags_to_preserve' ] = array( "pre" );
 
 
 /*
+	Bulk Redirects Filename
+
+	Your preferred filename to use as the file where your bulk redirection rules are defined.
+	
+	Set to a string (e.g. "_my_bulk_redirects"). Defaults to "_bulk_redirects" if not specified.
+*/
+
+$configurable_options[ 'bulk_redirects_filename' ] = "_bulk_redirects";
+
+
+/*
+	Redirection Template Filename
+
+	Your preferred filename to use as the redirection template generated for all redirections.
+
+	Set to a string (e.g. "_my_redirection_template.html"). Defaults to "_redirection_template.html" if not specified.
+*/
+
+$configurable_options[ 'redirection_template_filename' ] = "_redirection_template.html";
+
+
+/*
+	Minify CSS In-Place
+
+	Whether to output CSS files in minified form only, or to output both original and minified versions (minified ending in .min.css).
+
+	Set to true to just minify CSS files, or false to output both versions. Defaults to true.
+*/
+
+$configurable_options[ 'minify_css_inplace' ] = true;
+
+
+/*
 	Auto Update
 
 	Downloads the latest version of StaticPHP upon every run to ensure you always run the latest version.
