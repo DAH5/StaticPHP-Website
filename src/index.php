@@ -9,7 +9,7 @@ staticphp_nav_item: home
         <div class="text">Empowering you to develop great sites in ways you never knew were possible.</div>
         <div class="buttons">
             <a href="/docs/Getting-Started.html" class="primary">Get Started</a>
-            <a href="/download">Download</a>
+            <a href="/download.html">Download</a>
         </div>
     </div>
 </section>
