@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      BRANCH_NAME: master
-      CLOUDFLARE_PROJECT_NAME: staticphp
       KATAPULT_OBJECT_STORAGE_REGION: uk-lon-1
       KATAPULT_OBJECT_STORAGE_HOSTNAME: uk-lon-1.katapultobjects.com
       KATAPULT_OBJECT_STORAGE_BUCKET_NAME: staticphp
@@ -27,19 +25,11 @@ jobs:
 
       - name: Run StaticPHP build
         run: php StaticPHP-Launcher.php
-
-      - name: Install Wrangler
-        run: npm install -g wrangler
-
-      - name: Publish to Cloudflare Pages
-        run: wrangler pages deploy public/ --project-name=$CLOUDFLARE_PROJECT_NAME --branch=$BRANCH_NAME
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       
       - name: Install s3cmd
         run: sudo apt-get install -y s3cmd
 
-      - name: Configure s3cmd for Katapult
+      - name: Configure s3cmd for use with Katapult Object Storage and define mine-types list
         run: |
           cat > ~/.mime.types <<EOF
           text/html       html htm
@@ -60,8 +50,12 @@ jobs:
           use_https = True
           mime_types = /home/runner/.mime.types
           EOF
+        
+      - name: Purge Katapult Object Storage bucket
+        run: |
+          s3cmd del --recursive --force s3://$KATAPULT_OBJECT_STORAGE_BUCKET_NAME/
 
-      - name: Upload files to Katapult with correct MIME types
+      - name: Upload files to the Katapult Object Storage bucket with correct MIME types
         run: |
           # Build extension-to-MIME map from .mime.types
           declare -A mime_map
@@ -82,10 +76,9 @@ jobs:
 
             if [ -n "$mime" ]; then
               echo "Uploading $filepath as $mime"
-              s3cmd put --mime-type="$mime" "$filepath" "s3://$KATAPULT_OBJECT_STORAGE_BUCKET_NAME/$s3path" --acl-public
+              s3cmd sync --mime-type="$mime" "$filepath" "s3://$KATAPULT_OBJECT_STORAGE_BUCKET_NAME/$s3path" --delete-removed --acl-public
             else
               echo "Uploading $filepath with default mime"
-              s3cmd put "$filepath" "s3://$KATAPULT_OBJECT_STORAGE_BUCKET_NAME/$s3path" --acl-public
+              s3cmd sync "$filepath" "s3://$KATAPULT_OBJECT_STORAGE_BUCKET_NAME/$s3path" --delete-removed --acl-public
             fi
           done
-
