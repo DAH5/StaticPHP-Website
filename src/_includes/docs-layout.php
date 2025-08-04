@@ -29,6 +29,7 @@ staticphp_nav_item: docs
             <a href="/docs/Markdown-Files.html"--- if( docs_nav_item == "markdown-files" ) --- class="current"--- endif --->Markdown Files</a>
             <a href="/docs/Redirections.html"--- if( docs_nav_item == "redirections" ) --- class="current"--- endif --->Redirections</a>
             <a href="/docs/Remote-Content.html"--- if( docs_nav_item == "remote-content" ) --- class="current"--- endif --->Remote Content</a>
+            <a href="/docs/Testing.html"--- if( docs_nav_item == "testing" ) --- class="current"--- endif --->Testing</a>
         </nav>
 
         <div class="content">
