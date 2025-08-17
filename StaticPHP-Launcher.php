@@ -127,6 +127,85 @@ $configurable_options[ 'minify_css_inplace' ] = true;
 
 
 /*
+	Items To Passthrough
+
+	Sometimes you may wish a PHP script or file that StaticPHP would normally process, remain in the output as-is.
+
+	Set items_to_passthrough to an array of path parts you wish to match against, where StaticPHP will simply copy them over to output.
+
+	Defaults to an empty array.
+*/
+
+$configurable_options[ 'items_to_passthrough' ] = array();
+
+
+/*
+	Test Mode
+
+	Set to true to perform tests instead of normal processing.
+
+	Defaults to false.
+*/
+
+$configurable_options[ 'test_mode' ] = false;
+
+
+/*
+	Test Mode Input Directory Path
+
+	Directory path containing test input files.
+
+	Defaults to "tests/input".
+*/
+
+$configurable_options[ 'test_mode_input_dir_path' ] = __DIR__ . DIRECTORY_SEPARATOR . "tests" . DIRECTORY_SEPARATOR . "input";
+
+
+/*
+	Test Mode Expected Directory Path
+
+	Directory path containing test expected output files.
+
+	Defaults to "tests/expected".
+*/
+
+$configurable_options[ 'test_mode_expected_dir_path' ] = __DIR__ . DIRECTORY_SEPARATOR . "tests" . DIRECTORY_SEPARATOR . "expected";
+
+
+/*
+	Test Mode Output Directory Path
+
+	Directory path for where to output test results.
+
+	Defaults to "tests/output".
+*/
+
+$configurable_options[ 'test_mode_output_dir_path' ] = __DIR__ . DIRECTORY_SEPARATOR . "tests" . DIRECTORY_SEPARATOR . "output";
+
+
+/*
+	Test Mode Output Results File
+
+	If set to true, a file containing the test results will be generated.
+
+	Defaults to true. Set to false to disable.
+*/
+
+$configurable_options[ 'test_mode_output_results_file' ] = true;
+
+
+/*
+	Test Mode Results File Path
+
+	If test_mode_output_results_file is set to true, an HTML file will be generated containing the test results at the specified path.
+
+	Defaults to "tests/output/results.html".
+*/
+
+$configurable_options[ 'test_mode_results_file_path' ] = __DIR__ . DIRECTORY_SEPARATOR . "tests" . DIRECTORY_SEPARATOR . "output" . DIRECTORY_SEPARATOR . "results.html";
+
+
+/*
 	Auto Update
 
 	Downloads the latest version of StaticPHP upon every run to ensure you always run the latest version.
