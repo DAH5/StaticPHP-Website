@@ -1,15 +1,17 @@
 ---
-layout: src/_includes/layout.php
+layout: src/_includes/layout-2025-09.php
 staticphp_nav_item: home
 ---
 
 <section class="hero home">
     <div class="container">
-        <div class="heading">The Fast and Simple Static Site Generator</div>
-        <div class="text">Empowering you to develop great sites in ways you never knew were possible.</div>
-        <div class="buttons">
-            <a href="/docs/Getting-Started.html" class="primary">Get Started</a>
-            <a href="/download.html">Download</a>
+        <div class="info">
+            <div class="heading">The Fast and Simple Static Site Generator</div>
+            <div class="text">Empowering you to develop great sites in ways you never knew were possible.</div>
+            <div class="buttons">
+                <a href="/docs/Getting-Started.html" class="primary">Get Started</a>
+                <a href="/download.html" class="secondary">Download</a>
+            </div>
         </div>
     </div>
 </section>
@@ -20,23 +22,25 @@ staticphp_nav_item: home
 
         <div class="features">
             <div class="feature">
+                <div class="icon"><img src="/assets/images/icons/speed.svg"></div>
                 <div class="title">Blazing Fast</div>
                 <div class="description">StaticPHP generates static websites within seconds.</div>
             </div>
 
             <div class="feature">
+                <div class="icon"><img src="/assets/images/icons/couch-and-lamp.svg"></div>
                 <div class="title">Easy To Use</div>
                 <div class="description">Simple to setup, and easy to run, makes it accessible to everyone.</div>
             </div>
 
             <div class="feature">
+                <div class="icon"><img src="/assets/images/icons/settings.svg"></div>
                 <div class="title">Flexible and Powerful</div>
                 <div class="description">Extensive <a href="/docs/Customisation.html">customisation options</a> to fit your needs.</div>
             </div>
-        </div>
-
-        <div class="features">
+            
             <div class="feature">
+                <div class="icon"><img src="/assets/images/icons/www-url.svg"></div>
                 <div class="title">SEO Friendly URLs</div>
                 <div class="description">Optimize for Search Engines and have URLs like <code>https://website.tld/page</code>.</div>
             </div>

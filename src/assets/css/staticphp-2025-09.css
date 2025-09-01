@@ -1,0 +1,531 @@
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+
+html,
+body
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    color: #212529;
+}
+
+a
+{
+    color: #4F5B93;
+    font-weight: 700;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+.container
+{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+header.small
+{
+    border: 1px solid #6d7ec7;
+}
+
+header.small .container
+{
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    justify-content: flex-end;
+}
+
+header.small nav
+{
+    flex-direction: row;
+}
+
+header
+{
+    background-color: #4F5B93;
+    color: white;
+}
+
+header a
+{
+    color: #a5a5a5;
+    mix-blend-mode: color-dodge;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+header .container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+header nav a:hover
+{
+    color: #fff;
+}
+
+header nav a.current
+{
+    color: #fff;
+    font-weight: 700;
+}
+
+header nav h1
+{
+    margin: 0;
+    padding: 0;
+}
+
+header nav h1 a
+{
+    color: #fff;
+    font-weight: 600;
+}
+
+header nav h1 .static
+{
+    font-weight: 700;
+}
+
+header nav h1 .php
+{
+    font-weight: 500;
+    font-style: italic;
+}
+
+header nav.buttons
+{
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+header nav .button
+{
+    background-color: #475284;
+    color: #fff;
+    mix-blend-mode: color-dodge;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-weight: 600;
+}
+
+header nav .button.primary,
+section.hero .buttons .primary
+{
+    background-color: #6a7ac1;
+    mix-blend-mode: normal;
+    border-width: 0;
+}
+
+header nav .button.primary:hover,
+section.hero .buttons .primary:hover
+{
+    background-color: #7d8fdf;
+}
+
+header nav .button.secondary,
+section.hero .buttons .secondary
+{
+    background-color: transparent;
+    border: 2px solid #6a7ac1;
+    mix-blend-mode: normal;
+}
+
+header nav .button.secondary:hover,
+section.hero .buttons .secondary:hover
+{
+    border-color: #7d8fdf;
+}
+
+section.hero
+{
+    /* background-color: #47517f; */
+    background-color: #475284;
+    color: #fff;
+    mix-blend-mode: color-dodge;
+}
+
+section.hero,
+section.features,
+section.howitworks
+{
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+
+section.hero .heading
+{
+    font-size: 3.4rem;
+    font-weight: 800;
+}
+
+section.hero .text
+{
+    margin-top: .75rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+section.hero .buttons
+{
+    margin-top: 3.43rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+section.hero .buttons a
+{
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    border: 2px solid #fff;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+section.features .heading,
+section.howitworks .heading
+{
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 3.43rem;
+    text-align: center;
+}
+
+section.features .features,
+section.howitworks .facts
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+section.features
+{
+    background-color: #f1f1f1;
+}
+
+section.features .feature,
+section.howitworks .fact
+{
+    width: 100%;
+    padding: 3rem 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section.features .feature .icon,
+section.howitworks .fact .icon
+{
+    max-width: 100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+section.features .feature .title,
+section.howitworks .fact .title
+{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+footer
+{
+    background-color: #4F5B93;
+    color: white;
+    font-size: 0.9rem;
+}
+
+footer .container
+{
+    padding: 0.5rem 1rem;
+}
+
+footer a
+{
+    color: #fff;
+    mix-blend-mode: color-dodge;
+    text-decoration: none;
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+}
+
+.doc .container
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.doc .mobile-nav-header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    background-color: #eee;
+}
+
+.mobile-nav-header a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.mobile-nav-header #staticphp_docs_nav_toggle_label
+{
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.mobile-nav-header p
+{
+    margin: 0;
+    padding: 1rem;
+}
+
+#staticphp_docs_nav_toggle ~ .doc nav
+{
+    display: none;
+}
+
+#staticphp_docs_nav_toggle:checked ~ .doc nav
+{
+    display: block;
+}
+
+#staticphp_docs_nav_toggle:checked ~ .doc .mobile-nav-header
+{
+    background-color: #dddddd;
+}
+
+#staticphp_docs_nav_toggle
+{
+    display: none;
+}
+
+.doc nav
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+}
+
+.doc nav a
+{
+    display: block;
+    padding: 1rem 2rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.doc nav a:hover
+{
+    background-color: #e1e1e1;
+}
+
+.doc nav a.current
+{
+    background-color: #d1d1d1;
+    font-weight: 600;
+}
+
+.doc main
+{
+    padding: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+pre
+{
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+pre,
+code
+{
+    background-color: #eee;
+    color: #000;
+    padding: 0.3rem 0.7rem;
+    overflow-x: auto;
+    margin-bottom: 1.5em;
+}
+
+code
+{
+    padding: 0.2rem 0.3rem;
+    border-radius: 8px;
+}
+
+pre code
+{
+    display: block;
+    font-family: monospace;
+    font-size: 0.95em;
+    line-height: 1.5;
+    white-space: pre;
+    padding: 0;
+    margin: 0;
+    margin-top: -1.5rem;
+    border-radius: 0;
+}
+
+@media( min-width: 800px )
+{
+    header .container
+    {
+        flex-direction: row;
+    }
+
+    header nav
+    {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    header nav.buttons
+    {
+        margin-top: 0;
+    }
+
+    section.hero .heading
+    {
+        font-size: 5rem;
+    }
+
+    section.hero .text
+    {
+        font-size: 2.3rem;
+    }
+
+    section.hero .info
+    {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    section.hero .buttons
+    {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    section.hero .buttons a
+    {
+        display: inline-block;
+    }
+
+    section.features .heading,
+    section.howitworks .heading
+    {
+        font-size: 4rem;
+    }
+
+    section.features .features,
+    section.howitworks .facts
+    {
+        flex-direction: row;
+    }
+
+    section.features .feature,
+    section.howitworks .fact
+    {
+        width: 33.33333333333333%;
+    }
+
+    .doc .container
+    {
+        flex-direction: row;
+    }
+
+    .doc nav
+    {
+        width: 200px;
+        padding-top: 1rem;
+        width: 20%;
+    }
+
+    .doc nav a
+    {
+        white-space: nowrap;
+    }
+
+    .doc main
+    {
+        width: 80%;
+        padding: 1rem 2rem;
+    }
+
+    .doc main h1:first-of-type,
+    .doc main h2:first-of-type,
+    .doc main h3:first-of-type,
+    .doc main h4:first-of-type,
+    .doc main h5:first-of-type,
+    .doc main h6:first-of-type
+    {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .doc .mobile-nav-header
+    {
+        display: none;
+    }
+
+    #staticphp_docs_nav_toggle ~ .doc nav,
+    #staticphp_docs_nav_toggle:checked ~ .doc nav
+    {
+        display: block;
+    }
+
+    pre,
+    code
+    {
+        border-radius: 8px;
+    }
+
+    pre code
+    {
+        border-radius: 4px;
+    }
+}

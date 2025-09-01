@@ -1,7 +1,7 @@
 ---
 page_title: 404 Not Found
 friendly_urls: false
-layout: src/_includes/layout.php
+layout: src/_includes/layout-2025-09.php
 ---
 
 <style type="text/css">
@@ -15,6 +15,15 @@ layout: src/_includes/layout.php
         .not-found .info { width: 70%; }
     }
 </style>
+
+<section class="hero">
+    <div class="container">
+        <div class="info">
+            <div class="heading">404 Not Found</div>
+            <div class="text">The requested resource could not be found.</div>
+        </div>
+    </div>
+</section>
 
 <section class="not-found">
     <div class="container">
