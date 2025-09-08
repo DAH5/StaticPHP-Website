@@ -1,6 +1,7 @@
 ---
 layout: src/_includes/layout-2025-09.php
 staticphp_nav_item: home
+javascript_url: /assets/javascripts/anti-email-harvesting.js
 ---
 
 <section class="hero home">
@@ -70,5 +71,21 @@ staticphp_nav_item: home
                 <div class="description">Run StaticPHP to render the static files for your site, and deploy to your server.</div>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="bookmark">
+    <div class="container">
+        <div class="heading">Bookmark StaticPHP</div>
+        <div class="text">Return to StaticPHP anytime by saving this URL to your bookmarks.</div>
+        <div class="text"><a href="https://weburl.net/staticphp" target="_blank">weburl.net/staticphp</a></div>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="container">
+        <div class="heading">Get In Touch</div>
+        <div class="text">Feature requests, bug reports, feedback, or just to say hello.</div>
+        <p class="email"><b>Email: </b><span class="email-address">staticphp [at] themailbox [dot] net</span></p>
     </div>
 </section>

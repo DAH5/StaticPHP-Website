@@ -178,7 +178,9 @@ section.hero
 
 section.hero,
 section.features,
-section.howitworks
+section.howitworks,
+section.contact,
+section.bookmark
 {
     padding-top: 6.25rem;
     padding-bottom: 6.25rem;
@@ -190,7 +192,9 @@ section.hero .heading
     font-weight: 800;
 }
 
-section.hero .text
+section.hero .text,
+section.bookmark .text,
+section.contact .text
 {
     margin-top: .75rem;
     font-size: 1.7rem;
@@ -219,7 +223,9 @@ section.hero .buttons a
 }
 
 section.features .heading,
-section.howitworks .heading
+section.howitworks .heading,
+section.contact .heading,
+section.bookmark .heading
 {
     font-size: 2.8rem;
     font-weight: 800;
@@ -236,7 +242,8 @@ section.howitworks .facts
     flex-wrap: wrap;
 }
 
-section.features
+section.features,
+section.bookmark
 {
     background-color: #f1f1f1;
 }
@@ -268,6 +275,19 @@ section.howitworks .fact .title
 {
     font-size: 2rem;
     font-weight: 700;
+}
+
+section.contact .email
+{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+section.bookmark .text,
+section.contact .text
+{
+    text-align: center;
 }
 
 footer

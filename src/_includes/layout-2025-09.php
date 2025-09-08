@@ -76,5 +76,9 @@
                 <p>Copyright &copy; <a href="https://weburl.net/davidhunter" target="_blank">David Hunter</a>. Powered by StaticPHP.</p>
             </div>
         </footer>
+
+        --- if( javascript_url ) ---
+        <script type="text/javascript" src="--- metadata.javascript_url ---"></script>
+        --- endif ---
     </body>
 </html>
