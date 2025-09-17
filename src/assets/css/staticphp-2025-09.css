@@ -475,6 +475,7 @@ pre code
         color: #ccc;
     }
 
+    .doc .mobile-nav-header a,
     .doc nav a
     {
         color: #eee;
@@ -486,6 +487,16 @@ pre code
     }
 
     .doc nav a.current
+    {
+        background-color: #3f3f3f;
+    }
+
+    .doc .mobile-nav-header
+    {
+        background-color: #2f2f2f;
+    }
+
+    #staticphp_docs_nav_toggle:checked ~ .doc .mobile-nav-header
     {
         background-color: #3f3f3f;
     }
