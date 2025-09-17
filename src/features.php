@@ -2,6 +2,7 @@
 layout: src/_includes/layout-2025-09.php
 staticphp_nav_item: features
 page_title: Features
+custom_output_path: public/features.htm
 ---
 
 <section class="hero">
@@ -31,7 +32,7 @@ page_title: Features
             <div class="feature">
                 <div class="icon"><img src="/assets/images/icons/settings.svg"></div>
                 <div class="title">Flexible and Powerful</div>
-                <div class="description">Extensive <a href="/docs/Customisation.html">customisation options</a> to fit your needs.</div>
+                <div class="description">Extensive <a href="/docs/Customisation.htm">customisation options</a> to fit your needs.</div>
             </div>
             
             <div class="feature">
@@ -43,25 +44,25 @@ page_title: Features
             <div class="feature">
                 <div class="icon"><img src="/assets/images/icons/metadata-delimiter.svg"></div>
                 <div class="title">MetaData</div>
-                <div class="description">Similar to variables, <a href="/docs/MetaData.html">MetaData</a> is <code>key: value</code> pairs of information, which can be used to customise what StaticPHP does for that page.</div>
+                <div class="description">Similar to variables, <a href="/docs/MetaData.htm">MetaData</a> is <code>key: value</code> pairs of information, which can be used to customise what StaticPHP does for that page.</div>
             </div>
             
             <div class="feature">
                 <div class="icon"><img src="/assets/images/icons/blog.svg"></div>
                 <div class="title">Functional Blocks</div>
-                <div class="description"><a href="/docs/Functional-Blocks.html">Functional Blocks</a> such as loop blocks can be used to perform certain functions on the page, such as iterate through a list and display information.</div>
+                <div class="description"><a href="/docs/Functional-Blocks.htm">Functional Blocks</a> such as loop blocks can be used to perform certain functions on the page, such as iterate through a list and display information.</div>
             </div>
 
             <div class="feature">
                 <div class="icon"><img src="/assets/images/icons/minimize-size.svg"></div>
                 <div class="title">Code Minification</div>
-                <div class="description">Make your website even faster and save on bandwidth by enabling <a href="/docs/Customisation.html">code minification</a>.</div>
+                <div class="description">Make your website even faster and save on bandwidth by enabling <a href="/docs/Customisation.htm">code minification</a>.</div>
             </div>
 
             <div class="feature">
                 <div class="icon"><img src="/assets/images/icons/pointer.svg"></div>
                 <div class="title">Redirections</div>
-                <div class="description">Bulk path-based <a href="/docs/Redirections.html">redirections</a> take users from one page to another.</div>
+                <div class="description">Bulk path-based <a href="/docs/Redirections.htm">redirections</a> take users from one page to another.</div>
             </div>
         </div>
     </div>

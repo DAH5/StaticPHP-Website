@@ -25,13 +25,13 @@
             <div class="container">
                 <nav>
                     <h1><a href="/"><span class="static">Static</span><span class="php">PHP</span></a></h1>
-                    <a href="/features.html"--- if( staticphp_nav_item == "features" ) --- class="current"--- endif --->Features</a>
+                    <a href="/features.htm"--- if( staticphp_nav_item == "features" ) --- class="current"--- endif --->Features</a>
                     <a href="/docs"--- if( docs_nav_item ) --- class="current"--- endif --->Docs</a>
                 </nav>
 
                 <nav class="buttons">
-                    <a href="/download.html" class="button secondary">Download</a>
-                    <a href="/docs/Getting-Started.html" class="button primary">Getting Started</a>
+                    <a href="/download.htm" class="button secondary">Download</a>
+                    <a href="/docs/Getting-Started.htm" class="button primary">Getting Started</a>
                 </nav>
             </div>
         </header>
@@ -48,16 +48,16 @@
                 </div>
 
                 <nav>
-                    <a href="/docs/Getting-Started.html"--- if( docs_nav_item == "getting-started" ) --- class="current"--- endif --->Getting Started</a>
-                    <a href="/docs/MetaData.html"--- if( docs_nav_item == "metadata" ) --- class="current"--- endif --->MetaData</a>
-                    <a href="/docs/Functional-Blocks.html"--- if( docs_nav_item == "functional-blocks" ) --- class="current"--- endif --->Functional Blocks</a>
-                    <a href="/docs/Customisation.html"--- if( docs_nav_item == "customisation" ) --- class="current"--- endif --->Customisation</a>
-                    <a href="/docs/HTML-Files.html"--- if( docs_nav_item == "html-files" ) --- class="current"--- endif --->HTML Files</a>
-                    <a href="/docs/PHP-Files.html"--- if( docs_nav_item == "php-files" ) --- class="current"--- endif --->PHP Fils</a>
-                    <a href="/docs/Markdown-Files.html"--- if( docs_nav_item == "markdown-files" ) --- class="current"--- endif --->Markdown Files</a>
-                    <a href="/docs/Redirections.html"--- if( docs_nav_item == "redirections" ) --- class="current"--- endif --->Redirections</a>
-                    <a href="/docs/Remote-Content.html"--- if( docs_nav_item == "remote-content" ) --- class="current"--- endif --->Remote Content</a>
-                    <a href="/docs/Testing.html"--- if( docs_nav_item == "testing" ) --- class="current"--- endif --->Testing</a>
+                    <a href="/docs/Getting-Started.htm"--- if( docs_nav_item == "getting-started" ) --- class="current"--- endif --->Getting Started</a>
+                    <a href="/docs/MetaData.htm"--- if( docs_nav_item == "metadata" ) --- class="current"--- endif --->MetaData</a>
+                    <a href="/docs/Functional-Blocks.htm"--- if( docs_nav_item == "functional-blocks" ) --- class="current"--- endif --->Functional Blocks</a>
+                    <a href="/docs/Customisation.htm"--- if( docs_nav_item == "customisation" ) --- class="current"--- endif --->Customisation</a>
+                    <a href="/docs/HTML-Files.htm"--- if( docs_nav_item == "html-files" ) --- class="current"--- endif --->HTML Files</a>
+                    <a href="/docs/PHP-Files.htm"--- if( docs_nav_item == "php-files" ) --- class="current"--- endif --->PHP Fils</a>
+                    <a href="/docs/Markdown-Files.htm"--- if( docs_nav_item == "markdown-files" ) --- class="current"--- endif --->Markdown Files</a>
+                    <a href="/docs/Redirections.htm"--- if( docs_nav_item == "redirections" ) --- class="current"--- endif --->Redirections</a>
+                    <a href="/docs/Remote-Content.htm"--- if( docs_nav_item == "remote-content" ) --- class="current"--- endif --->Remote Content</a>
+                    <a href="/docs/Testing.htm"--- if( docs_nav_item == "testing" ) --- class="current"--- endif --->Testing</a>
                 </nav>
 
                 <main>
