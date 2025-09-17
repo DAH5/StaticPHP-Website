@@ -37,7 +37,7 @@ $configurable_options[ 'items_to_ignore' ] = array( "_includes" );
 	About page URL example: https://website.tld/about/
 */
 
-$configurable_options[ 'friendly_urls' ] = false;
+$configurable_options[ 'friendly_urls' ] = true;
 
 
 /*
