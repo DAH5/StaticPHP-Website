@@ -9,6 +9,9 @@
         --- if( docs_nav_item ) ---
         <base href="/docs/">
         --- endif ---
+        --- if( staticphp_nav_item == "download" ) ---
+        <base href="/">
+        --- endif ---
 
         <link rel="stylesheet" href="/assets/css/staticphp-2025-09.css">
     </head>
