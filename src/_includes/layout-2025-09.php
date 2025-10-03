@@ -33,6 +33,7 @@
                 <nav>
                     <h1><a href="/"><span class="static">Static</span><span class="php">PHP</span></a></h1>
                     <a href="/features/"--- if( staticphp_nav_item == "features" ) --- class="current"--- endif --->Features</a>
+                    <a href="/blog/"--- if( staticphp_nav_item == "blog" ) --- class="current"--- endif --->Blog</a>
                     <a href="/docs/"--- if( docs_nav_item ) --- class="current"--- endif --->Docs</a>
                 </nav>
 
@@ -70,7 +71,30 @@
                 <main>
         <?php endif; ?>
 
+        --- if( staticphp_nav_item == "blog" ) ---
+        <section class="hero">
+            <div class="container">
+                <div class="heading"><a href="/blog">Blog</a></div>
+                <div class="text">News, Updates, Tutorials, and More</div>
+            </div>
+        </section>
+        --- endif ---
+
+        --- if( post-title ) ---
+        <section class="posts">
+            <div class="container">
+                <div class="post">
+                    <div class="post-title">--- metadata.post-title ---</div>
+                    <div class="post-meta">Posted by --- metadata.post-author-name --- on --- metadata.post-date --- at --- metadata.post-time ---.</div>
+        --- endif ---
+        
         {{ content }}
+
+        --- if( post-title ) ---
+                </div>
+            </div>
+        </section>
+        --- endif ---
 
         <?php if( isset( $metadata[ 'docs_nav_item' ] ) ): ?>
                 </main>
