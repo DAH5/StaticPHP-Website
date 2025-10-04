@@ -42,7 +42,7 @@ staticphp_nav_item: blog
 
 <h2>Step Three: Your Website Files</h2>
 
-<p>We will use StaticPHP's Base Layouts feature to keep the design of our site consistent across all pages. We will only really be creating a couple of pages now, but it is good to set this up now to save future you time later. This file is a special file, so we want to make sure StaticPHP ignores it and doesn't process it as a normal file, so let's create a folder/directory for ingored files, by default it is called <code>_includes</code>, but you can change this in the launcher file.</p>
+<p>We will use StaticPHP's Base Layouts feature to keep the design of our site consistent across all pages. We will only really be creating a couple of pages now, but it is good to set this up now to save future you time later. This file is a special file, so we want to make sure StaticPHP ignores it and doesn't process it as a normal file, so let's create a folder/directory for ignored files, by default it is called <code>_includes</code>, but you can change this in the launcher file.</p>
 
 <p>Inside <code>_includes</code>, create a file that will contain your website's layout, this can be a PHP or HTML file, but we will call ours <code>layout.html</code>. Edit the file and put in simple boilerplate HTML code for your site. The content placeholder, by default it is <code>{{ content }}</code>, is where each page's content will be placed. Even though <code>{{ content }}</code> is the default, it is always a good idea to redefine your choice in case the default changes in the future.</p>
 

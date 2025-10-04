@@ -83,7 +83,7 @@
         --- if( post-title ) ---
         <section class="posts">
             <div class="container">
-                <div class="post">
+                <div class="post standalone">
                     <div class="post-title">--- metadata.post-title ---</div>
                     <div class="post-meta">Posted by --- metadata.post-author-name --- on --- metadata.post-date --- at --- metadata.post-time ---.</div>
         --- endif ---
