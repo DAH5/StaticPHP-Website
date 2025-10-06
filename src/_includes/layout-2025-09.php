@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>--- if( page_title ) ------ metadata.page_title --- - --- endif ------ if( docs_nav_item ) ---Docs - --- endif ---StaticPHP</title>
+        <title>--- if( page_title ) ------ metadata.page_title --- - --- endif ------ if( post-title ) ------ metadata.post-title --- - Blog - --- endif ------ if( docs_nav_item ) ---Docs - --- endif ---StaticPHP</title>
 
         --- if( docs_nav_item ) ---
         <base href="/docs/">
