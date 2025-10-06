@@ -80,12 +80,28 @@
         </section>
         --- endif ---
 
+        --- if( archive-page ) ---
+        <section class="blog-archive">
+            <div class="container">
+        --- endif ---
+
+        --- if( author ) ---Author: --- metadata.author ------ endif ---
+        
+        --- if( year ) ---<a href="/blog/--- metadata.year ---/">--- metadata.year ---</a>--- endif ---
+        --- if( month ) --- / <a href="/blog/--- metadata.year ---/--- metadata.month ---/">--- metadata.month ---</a>--- endif ---
+        --- if( day ) --- / <a href="/blog/--- metadata.year ---/--- metadata.month ---/--- metadata.day ---/">--- metadata.day ---</a>--- endif ---
+        
+        --- if( archive-page ) ---
+            </div>
+        </section>
+        --- endif ---
+
         --- if( post-title ) ---
         <section class="posts">
             <div class="container">
                 <div class="post standalone">
                     <div class="post-title">--- metadata.post-title ---</div>
-                    <div class="post-meta">Posted by --- metadata.post-author-name --- on --- metadata.post-date --- at --- metadata.post-time ---.</div>
+                    <div class="post-meta">Posted by <a href="/blog/author/--- metadata.post-author-slug ---">--- metadata.post-author-name ---</a> on <a href="/blog/--- metadata.post-year ---/">--- metadata.post-year ---</a>/<a href="/blog/--- metadata.post-year ---/--- metadata.post-month ---/">--- metadata.post-month ---</a>/<a href="/blog/--- metadata.post-year ---/--- metadata.post-month ---/--- metadata.post-day ---/">--- metadata.post-day ---</a> at --- metadata.post-time ---.</div>
         --- endif ---
         
         {{ content }}

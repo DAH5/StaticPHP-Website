@@ -1,7 +1,10 @@
 ---
 post-title: Hello World
 post-author-name: David Hunter
-post-date: 2025-10-03
+post-author-slug: david-hunter
+post-year: 2025
+post-month: 10
+post-day: 03
 post-time: 17:25
 post-excerpt: A getting started tutorial from just an idea.
 layout: src/_includes/layout-2025-09.php

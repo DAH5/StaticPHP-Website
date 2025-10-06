@@ -492,9 +492,27 @@ pre code
     color: #888;
 }
 
+.posts .post-meta a
+{
+    color: #888;
+    font-weight: normal;
+}
+
 .posts .post-excerpt
 {
     font-size: 1.2rem;
+}
+
+section.blog-archive
+{
+    background-color: #475284;
+    color: #ccc;
+    font-size: 1.2rem;
+}
+
+section.blog-archive a
+{
+    color: #fff;
 }
 
 @media( prefers-color-scheme: dark )
