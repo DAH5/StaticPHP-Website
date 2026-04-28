@@ -78,7 +78,7 @@ javascript_url: /assets/javascripts/anti-email-harvesting.js
     <div class="container">
         <div class="heading">Bookmark StaticPHP</div>
         <div class="text">Return to StaticPHP anytime by saving this URL to your bookmarks.</div>
-        <div class="text"><a href="https://weburl.net/staticphp" target="_blank">weburl.net/staticphp</a></div>
+        <div class="text"><a href="https://www.staticphp.com" target="_blank">www.staticphp.com</a></div>
     </div>
 </section>
 
@@ -86,6 +86,6 @@ javascript_url: /assets/javascripts/anti-email-harvesting.js
     <div class="container">
         <div class="heading">Get In Touch</div>
         <div class="text">Feature requests, bug reports, feedback, or just to say hello.</div>
-        <p class="email"><b>Email: </b><span class="email-address">staticphp [at] themailbox [dot] net</span></p>
+        <p class="email"><b>Email: </b><span class="email-address">contact [at] staticphp [dot] com</span></p>
     </div>
 </section>

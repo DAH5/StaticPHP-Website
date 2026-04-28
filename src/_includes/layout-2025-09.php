@@ -22,8 +22,8 @@
         <header class="small">
             <div class="container">
                 <nav>
-                    <a href="https://weburl.net/github/staticphp" target="_blank">GitHub</a>
-                    <a href="https://weburl.net/gitlab/staticphp" target="_blank">GitLab</a>
+                    <a href="https://github.com/DAH5/StaticPHP" target="_blank">GitHub</a>
+                    <a href="https://gitlab.com/DAH5/StaticPHP" target="_blank">GitLab</a>
                 </nav>
             </div>
         </header>
@@ -120,7 +120,7 @@
 
         <footer>
             <div class="container">
-                <p>Copyright &copy; <a href="https://weburl.net/davidhunter" target="_blank">David Hunter</a>. Powered by StaticPHP.</p>
+                <p>Copyright &copy; <a href="https://www.davidhunter.scot" target="_blank">David Hunter</a>. Powered by StaticPHP.</p>
             </div>
         </footer>
 
