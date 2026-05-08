@@ -44,7 +44,7 @@
             </div>
         </header>
 
-        <?php if( isset( $metadata[ 'docs_nav_item' ] ) ): ?>
+        --- if( docs_nav_item ) ---
         <section class="doc">
             <div class="container">
                 <div class="mobile-nav-header">
@@ -69,7 +69,7 @@
                 </nav>
 
                 <main>
-        <?php endif; ?>
+        --- endif ---
 
         --- if( staticphp_nav_item == "blog" ) ---
         <section class="hero">
