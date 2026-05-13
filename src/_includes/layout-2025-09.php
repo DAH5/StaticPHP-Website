@@ -22,6 +22,7 @@
         <header class="small">
             <div class="container">
                 <nav>
+                    <a href="/namegenerator/"--- if( staticphp_nav_item == "namegenerator" ) --- class="current"--- endif --->Name Generator</a>
                     <a href="https://github.com/DAH5/StaticPHP" target="_blank">GitHub</a>
                     <a href="https://gitlab.com/DAH5/StaticPHP" target="_blank">GitLab</a>
                 </nav>
