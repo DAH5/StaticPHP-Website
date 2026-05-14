@@ -14,6 +14,10 @@
         --- endif ---
 
         <link rel="stylesheet" href="/assets/css/staticphp-2025-09.min.css">
+
+        --- if( stylesheet_url ) ---
+        <link rel="stylesheet" href="--- metadata.stylesheet_url ---">
+        --- endif ---
     </head>
 
     <body>
