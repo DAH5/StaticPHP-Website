@@ -45,5 +45,5 @@ staticphp_nav_item: namegenerator
     </form>
 
     <p id="name">Sorry, you can't use the name generator. Your device doesn't support it.</p>
-    <p>Press Generate or reload the page for another name suggestion.</p>
+    <p>Press Generate to get a new name suggestion.</p>
 </div>
