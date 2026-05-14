@@ -1,7 +1,7 @@
 ---
 page_title: Name Generator
 layout: src/_includes/layout-2025-09.php
-javascript_url: /assets/javascripts/namegenerator.js
+javascript_url: /assets/javascripts/namegenerator.min.js
 staticphp_nav_item: namegenerator
 ---
 

@@ -13,7 +13,7 @@
         <base href="/">
         --- endif ---
 
-        <link rel="stylesheet" href="/assets/css/staticphp-2025-09.css">
+        <link rel="stylesheet" href="/assets/css/staticphp-2025-09.min.css">
     </head>
 
     <body>

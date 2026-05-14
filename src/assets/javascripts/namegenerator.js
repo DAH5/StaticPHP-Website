@@ -15,7 +15,7 @@ var adjectivesWordList =
         "turquoise",
         "yellow",
     ],
-	"appearance":
+    "appearance":
     [
         "bald",
         "beautiful",
@@ -26,7 +26,7 @@ var adjectivesWordList =
         "magnificent",
         "shapely",
     ],
-	"personality":
+    "personality":
     [
         "agreeable",
         "ambitious",
@@ -161,7 +161,7 @@ var adjectivesWordList =
         "whirlwind",
         "young",
     ],
-}
+};
 
 var nounsWordList = 
 {
@@ -304,7 +304,7 @@ var nounsWordList =
         "truck",
         "van",
     ],
-}
+};
 
 var adjectiveTypes = Object.keys( adjectivesWordList );
 var nounsTypes = Object.keys( nounsWordList );
@@ -312,7 +312,7 @@ var nounsTypes = Object.keys( nounsWordList );
 function getRandomInt( max )
 {
     return Math.floor( Math.random() * max );
-}
+};
 
 function generateName( adjectiveCount = 2, nounCount = 1 )
 {
@@ -344,7 +344,7 @@ function generateName( adjectiveCount = 2, nounCount = 1 )
     }
 
     return name;
-}
+};
 
 var generatedName = generateName( getRandomInt( 3 ) + 1, 1 );
 

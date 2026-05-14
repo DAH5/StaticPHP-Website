@@ -79,7 +79,7 @@ $configurable_options[ 'minify_css' ] = true;
 	Set to true to enable, or false to disable. Default is false.
 */
 
-$configurable_options[ 'minify_js' ] = false;
+$configurable_options[ 'minify_js' ] = true;
 
 
 /*
@@ -123,7 +123,7 @@ $configurable_options[ 'redirection_template_filename' ] = "_redirection_templat
 	Set to true to just minify CSS files, or false to output both versions. Defaults to true.
 */
 
-$configurable_options[ 'minify_css_inplace' ] = true;
+$configurable_options[ 'minify_css_inplace' ] = false;
 
 
 /*
@@ -134,7 +134,7 @@ $configurable_options[ 'minify_css_inplace' ] = true;
 	Set to true to just minify JS files, or false to output both versions. Defaults to true.
 */
 
-$configurable_options[ 'minify_js_inplace' ] = true;
+$configurable_options[ 'minify_js_inplace' ] = false;
 
 
 /*
