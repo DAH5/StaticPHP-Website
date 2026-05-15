@@ -1,3 +1,7 @@
+---
+stylesheet_urls:
+- /assets/css/staticphp-2025-09.min.css
+---
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,11 +17,11 @@
         <base href="/">
         --- endif ---
 
-        <link rel="stylesheet" href="/assets/css/staticphp-2025-09.min.css">
+        <!-- <link rel="stylesheet" href="/assets/css/staticphp-2025-09.min.css"> -->
 
-        --- if( stylesheet_url ) ---
-        <link rel="stylesheet" href="--- metadata.stylesheet_url ---">
-        --- endif ---
+        --- loop( metadata = "stylesheet_urls" ) ---
+        <link rel="stylesheet" href="--- loop.item ---">
+        --- endloop ---
     </head>
 
     <body>
@@ -129,8 +133,8 @@
             </div>
         </footer>
 
-        --- if( javascript_url ) ---
-        <script type="text/javascript" src="--- metadata.javascript_url ---"></script>
-        --- endif ---
+        --- loop( metadata = "javascript_urls" ) ---
+        <script type="text/javascript" src="--- loop.item ---"></script>
+        --- endloop ---
     </body>
 </html>

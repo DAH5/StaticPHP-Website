@@ -1,7 +1,8 @@
 ---
 layout: src/_includes/layout-2025-09.php
 staticphp_nav_item: home
-javascript_url: /assets/javascripts/anti-email-harvesting.min.js
+javascript_urls:
+- /assets/javascripts/anti-email-harvesting.min.js
 ---
 
 <section class="hero home">
