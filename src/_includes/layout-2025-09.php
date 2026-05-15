@@ -16,11 +16,9 @@ stylesheet_urls:
         --- if( staticphp_nav_item == "download" ) ---
         <base href="/">
         --- endif ---
-
-        <!-- <link rel="stylesheet" href="/assets/css/staticphp-2025-09.min.css"> -->
-
+        
         --- loop( metadata = "stylesheet_urls" ) ---
-        <link rel="stylesheet" href="--- loop.item ---">
+        <link rel="stylesheet" type="text/css" href="--- loop.item ---">
         --- endloop ---
     </head>
 
@@ -121,11 +119,11 @@ stylesheet_urls:
         </section>
         --- endif ---
 
-        <?php if( isset( $metadata[ 'docs_nav_item' ] ) ): ?>
+        --- if( docs_nav_item ) ---
                 </main>
             </div>
         </section>
-        <?php endif; ?>
+        --- endif ---
 
         <footer>
             <div class="container">
