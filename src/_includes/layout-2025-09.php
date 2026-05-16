@@ -127,7 +127,8 @@ stylesheet_urls:
 
         <footer>
             <div class="container">
-                <p>Copyright &copy; <a href="https://www.davidhunter.scot" target="_blank">David Hunter</a>. Powered by StaticPHP.</p>
+                <p>A <a href="https://www.dah5.me.uk" target="_blank">DAH5</a> production by <a href="https://www.davidhunter.scot" target="_blank">David Hunter</a>.</p>
+                <p>Website built using source code available on <a href="https://github.com/DAH5/StaticPHP-Website" target="_blank">GitHub</a> and <a href="https://gitlab.com/DAH5/StaticPHP-Website" target="_blank">GitLab</a>.</p>
             </div>
         </footer>
 
