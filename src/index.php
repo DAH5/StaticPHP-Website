@@ -79,7 +79,7 @@ javascript_urls:
     <div class="container">
         <div class="heading">Bookmark StaticPHP</div>
         <div class="text">Return to StaticPHP anytime by saving this URL to your bookmarks.</div>
-        <div class="text"><a href="https://www.staticphp.com" target="_blank">www.staticphp.com</a></div>
+        <div class="text"><a href="https://staticphp.dah5.me.uk" target="_blank">staticphp.dah5.me.uk</a></div>
     </div>
 </section>
 
@@ -87,6 +87,6 @@ javascript_urls:
     <div class="container">
         <div class="heading">Get In Touch</div>
         <div class="text">Feature requests, bug reports, feedback, or just to say hello.</div>
-        <p class="email"><b>Email: </b><span class="email-address">contact [at] staticphp [dot] com</span></p>
+        <p class="email"><b>Email: </b><span class="email-address">david [dot] hunter [at] dah5 [dot] me [dot] uk</span></p>
     </div>
 </section>
