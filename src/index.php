@@ -79,7 +79,7 @@ javascript_urls:
     <div class="container">
         <div class="heading">Bookmark StaticPHP</div>
         <div class="text">Return to StaticPHP anytime by saving this URL to your bookmarks.</div>
-        <div class="text"><a href="https://staticphp.dah5.me.uk" target="_blank">staticphp.dah5.me.uk</a></div>
+        <div class="text"><a href="https://dah5.me.uk/staticphp" target="_blank">dah5.me.uk/staticphp</a></div>
     </div>
 </section>
 
