@@ -6,6 +6,7 @@ remote_content_url:
 - https://raw.githubusercontent.com/DAH5/StaticPHP/refs/heads/master/docs/Redirections.md
 - https://gitlab.com/DAH5/StaticPHP/-/raw/master/docs/Redirections.md
 remote_content_placeholder: {{ remote_content }}
+link_fragment_prefix: /docs/Redirections/
 ---
 
 {{ remote_content }}
