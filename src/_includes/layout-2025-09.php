@@ -76,6 +76,9 @@ stylesheet_urls:
                 </nav>
 
                 <main>
+                    <div class="new-docs-site-notice">
+                        The documentation website will soon move to a new home at <code><a href="https://docs.staticphp.com">docs.staticphp.com</a></code>.
+                    </div>
         --- endif ---
 
         --- if( staticphp_nav_item == "blog" ) ---

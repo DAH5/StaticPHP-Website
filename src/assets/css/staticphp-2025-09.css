@@ -515,6 +515,17 @@ section.blog-archive a
     color: #fff;
 }
 
+.new-docs-site-notice
+{
+    background-color: #f1f1f1;
+    padding: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    width: calc( 100% + 2rem );
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
 @media( prefers-color-scheme: dark )
 {
     html,
@@ -580,6 +591,11 @@ section.blog-archive a
     .posts .post
     {
         background-color: #2e2e2e;
+    }
+
+    .new-docs-site-notice
+    {
+        background-color: #1f1f1f;
     }
 }
 
@@ -705,6 +721,11 @@ section.blog-archive a
     pre code
     {
         border-radius: 4px;
+    }
+
+    .new-docs-site-notice
+    {
+        border-radius: 1rem;
     }
 }
 
