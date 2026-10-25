@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+html
+{
+    scroll-padding-top: 11.875rem;
+    scroll-behavior: smooth;
+}
+
 html,
 body
 {
@@ -166,6 +172,12 @@ header nav .button.secondary:hover,
 section.hero .buttons .secondary:hover
 {
     border-color: #7d8fdf;
+}
+
+header.main
+{
+    position: sticky;
+    top: 0;
 }
 
 section.hero
@@ -442,8 +454,56 @@ pre code
     white-space: pre;
     padding: 0;
     margin: 0;
-    margin-top: -1.5rem;
+    /* margin-top: -1.5rem; */
     border-radius: 0;
+}
+
+pre code.codeblock
+{
+    margin: -0.3rem -0.7rem;
+    padding: 0.3rem 0.7rem;
+}
+
+pre code.codeblock::before
+{
+    font-weight: bold;
+    background-color: #ddd;
+    display: block;
+    width: max-content;
+    margin: -0.3rem -0.7rem -1rem;
+    padding: 0.3rem 0.7rem;
+    content: 'Code Block';
+    border-radius: 0 0 0.5rem 0;
+}
+
+pre code.codeblock-plaintext::before
+{
+    content: 'Plain Text';
+}
+
+pre code.codeblock-bash::before
+{
+    content: 'Bash';
+}
+
+pre code.codeblock-php::before
+{
+    content: 'PHP';
+}
+
+pre code.codeblock-html::before
+{
+    content: 'HTML';
+}
+
+pre code.codeblock-css::before
+{
+    content: 'CSS';
+}
+
+pre code.codeblock-js::before
+{
+    content: 'JS';
 }
 
 .posts .container
@@ -515,17 +575,6 @@ section.blog-archive a
     color: #fff;
 }
 
-.new-docs-site-notice
-{
-    background-color: #f1f1f1;
-    padding: 1rem;
-    margin-left: -1rem;
-    margin-right: -1rem;
-    width: calc( 100% + 2rem );
-    white-space: nowrap;
-    overflow-x: auto;
-}
-
 @media( prefers-color-scheme: dark )
 {
     html,
@@ -560,6 +609,11 @@ section.blog-archive a
     code
     {
         color: #ccc;
+    }
+
+    pre code.codeblock::before
+    {
+        background-color: #181818;
     }
 
     .doc .mobile-nav-header a,
@@ -601,6 +655,11 @@ section.blog-archive a
 
 @media( min-width: 800px )
 {
+    html
+    {
+        scroll-padding-top: 4.75rem;
+    }
+
     header .container
     {
         flex-direction: row;

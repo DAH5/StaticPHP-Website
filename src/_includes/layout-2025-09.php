@@ -35,7 +35,7 @@ stylesheet_urls:
             </div>
         </header>
 
-        <header>
+        <header class="main">
             <div class="container">
                 <nav>
                     <h1><a href="/"><span class="static">Static</span><span class="php">PHP</span></a></h1>
@@ -76,9 +76,6 @@ stylesheet_urls:
                 </nav>
 
                 <main>
-                    <div class="new-docs-site-notice">
-                        The documentation website will soon move to a new home at <code><a href="https://docs.staticphp.com">docs.staticphp.com</a></code>.
-                    </div>
         --- endif ---
 
         --- if( staticphp_nav_item == "blog" ) ---
