@@ -443,6 +443,7 @@ code
 {
     padding: 0.2rem 0.3rem;
     border-radius: 8px;
+    word-wrap: break-word;
 }
 
 pre code
@@ -504,6 +505,13 @@ pre code.codeblock-css::before
 pre code.codeblock-js::before
 {
     content: 'JS';
+}
+
+ul
+{
+    margin: 0;
+    margin-left: 1rem;
+    padding: 0;
 }
 
 .posts .container
