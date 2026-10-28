@@ -372,8 +372,6 @@ footer a:hover
     align-items: center;
     font-size: 1.3rem;
     background-color: #eee;
-    position: sticky;
-    top: 4.50rem;
 }
 
 .mobile-nav-header a
