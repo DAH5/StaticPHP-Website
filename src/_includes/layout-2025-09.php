@@ -23,6 +23,7 @@ stylesheet_urls:
     </head>
 
     <body>
+        <input type="checkbox" id="staticphp_site_nav_toggle">
         <input type="checkbox" id="staticphp_docs_nav_toggle">
 
         <header class="small">
@@ -37,8 +38,9 @@ stylesheet_urls:
 
         <header class="main">
             <div class="container">
+                <h1><label for="staticphp_site_nav_toggle">☰</label><a href="/"><span class="static">Static</span><span class="php">PHP</span></a></h1>
+
                 <nav>
-                    <h1><a href="/"><span class="static">Static</span><span class="php">PHP</span></a></h1>
                     <a href="/features/"--- if( staticphp_nav_item == "features" ) --- class="current"--- endif --->Features</a>
                     <a href="/blog/"--- if( staticphp_nav_item == "blog" ) --- class="current"--- endif --->Blog</a>
                     <a href="/docs/"--- if( docs_nav_item ) --- class="current"--- endif --->Docs</a>

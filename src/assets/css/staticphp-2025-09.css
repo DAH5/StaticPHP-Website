@@ -7,7 +7,7 @@
 
 html
 {
-    scroll-padding-top: 11.875rem;
+    scroll-padding-top: 8.5625rem;
     scroll-behavior: smooth;
 }
 
@@ -50,11 +50,13 @@ header.small .container
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
     justify-content: flex-end;
+    overflow-x: auto;
 }
 
 header.small nav
 {
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 header
@@ -77,12 +79,33 @@ header .container
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+}
+
+#staticphp_site_nav_toggle
+{
+    display: none;
+}
+
+#staticphp_site_nav_toggle:not( :checked ) ~ header.main nav
+{
+    display: none;
+}
+
+#staticphp_site_nav_toggle:checked ~ header.main nav
+{
+    display: flex;
+}
+
+header label
+{
+    display: inline-block;
 }
 
 header nav
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
@@ -105,26 +128,28 @@ header nav a.current
     font-weight: 700;
 }
 
-header nav h1
+header h1
 {
     margin: 0;
     padding: 0;
-    flex: 0 0 100%;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
-header nav h1 a
+header h1 a
 {
     color: #fff;
     font-weight: 600;
 }
 
-header nav h1 .static
+header h1 .static
 {
     font-weight: 700;
 }
 
-header nav h1 .php
+header h1 .php
 {
     font-weight: 500;
     font-style: italic;
@@ -133,7 +158,6 @@ header nav h1 .php
 header nav.buttons
 {
     gap: 1rem;
-    margin-top: 2rem;
 }
 
 header nav .button
@@ -344,9 +368,12 @@ footer a:hover
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     font-size: 1.3rem;
     background-color: #eee;
+    position: sticky;
+    top: 4.50rem;
 }
 
 .mobile-nav-header a
@@ -358,7 +385,7 @@ footer a:hover
 .mobile-nav-header #staticphp_docs_nav_toggle_label
 {
     font-size: 2rem;
-    padding: 0.5rem 1rem;
+    /* padding: 0.5rem 1rem; */
     cursor: pointer;
 }
 
@@ -668,20 +695,26 @@ section.blog-archive a
         scroll-padding-top: 4.75rem;
     }
 
+    #staticphp_site_nav_toggle:not( :checked ) ~ header.main nav,
+    #staticphp_site_nav_toggle:checked ~ header.main nav
+    {
+        display: flex;
+    }
+
     header .container
     {
         flex-direction: row;
+    }
+
+    header label
+    {
+        display: none;
     }
 
     header nav
     {
         flex-direction: row;
         gap: 3rem;
-    }
-
-    header nav h1
-    {
-        flex: 0 0 auto;
     }
 
     header nav.buttons
