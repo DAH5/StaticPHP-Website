@@ -11,4 +11,8 @@ ErrorDocument 404 /404.html
 	RewriteCond %{HTTP_HOST} ^www.staticphp.io$ [OR]
 	RewriteCond %{HTTP_HOST} ^staticphp.com$
 	RewriteRule ^(.*)$ https://www.staticphp.com/$1 [R=307,END]
+
+	RewriteCond %{HTTP_HOST} ^(?!www\.)(.+)\.staticphp\.com$ [OR]
+	RewriteCond %{HTTP_HOST} ^(?!www\.)(.+)\.staticphp\.io$
+	RewriteRule ^(.*)$ https://www.staticphp.com/%1/$1 [R=307,END]
 </IfModule>
